@@ -21,19 +21,60 @@
       <div class="container">
         <section class="navigation">
           <div class="logotop">
-            <img src="image/Logo.png" alt="Logo Top" class="logotop__image" />
+            <a href="https://innabatalova.ru/Ehya-blog/" class="logotop__link"
+              ><img src="image/Logo.png" alt="Logo Top" class="logotop__image"
+            /></a>
           </div>
           <!-- /.logotop -->
-          <ul class="navbar">
-            <li class="navbar__item">Домой</li>
-            <li class="navbar__item">Лендинги</li>
-            <li class="navbar__item">Страницы</li>
-            <li class="navbar__item">Помощь</li>
-          </ul>
-          <button class="button">Получить</button>
-          <!-- /.button -->
+          <div class="navigation__wrappep">
+            <ul class="navbar">
+              <li class="navbar__item">
+                <a href="#" class="navbar__link">Домой</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link"
+                  ><span>Лендинги</span
+                  ><img
+                    src="image/angle-down.svg"
+                    alt="navbar-arrow"
+                    class="navbar__arrow"
+                /></a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link"
+                  ><span>Страницы</span
+                  ><img
+                    src="image/angle-down.svg"
+                    alt="navbar-arrow"
+                    class="navbar__arrow"
+                /></a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link">Помощь</a>
+              </li>
+            </ul>
+            <button class="button navigation__button">Получить</button>
+            <!-- /.button -->
+          </div>
         </section>
         <!-- /.navigation -->
+        <div class="search">
+        <h1 class="search__title">Отдел новостей</h1>
+        <!-- /.header-title -->
+        <form action="#" class="search__form">
+          <input type="text" class="search__input"></input>
+        <button class="search__button">Поиск</button>
+        </form>
+        
+      <div class="tegs">
+        <span class="tegs__info">Популярные теги</span>
+        <button class="tegs__button">Design</button>
+        <button class="tegs__button">User Experience</button>
+        <button class="tegs__button">User Interfaces</button>
+      </div>
+      <!-- /.tegs -->
+      </div>
+      <!-- /.search -->
       </div>
     </header>
     <!-- /.header -->

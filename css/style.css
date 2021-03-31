@@ -4,6 +4,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+  color: #ffffff;
 }
 
 a {
@@ -35,6 +36,10 @@ input {
 
 textarea {
   outline: none;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .container {
@@ -383,14 +388,38 @@ template {
 
 .header {
   background-image: url(../image/header-bg.jpg);
-  height: 740px;
+  width: 100%;
+  height: 640px;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: 100%;
+  overflow: hidden;
+  border-radius: 0 0 15px 15px;
 }
 
 .navigation {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 100px;
   padding: 26px 0;
+}
+
+.navigation__wrappep {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation__button {
+  padding: 13px 24px;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .logo__image {
@@ -400,6 +429,7 @@ template {
 
 .navbar {
   display: flex;
+  margin-right: 82px;
 }
 
 .navbar__item {
@@ -407,5 +437,32 @@ template {
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
+}
+
+.navbar__link {
+  margin-left: 19px;
+}
+
+.navbar__arrow {
+  width: 9px;
+  height: 16px;
+  padding-top: 5px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 120px;
+  padding-bottom: 480px;
+}
+
+.search__title {
+  margin: 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
 }
 /*# sourceMappingURL=style.css.map */
