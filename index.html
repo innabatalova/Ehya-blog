@@ -18,111 +18,130 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <section class="navigation">
-          <div class="logotop">
-            <a
-              href="https://innabatalova.ru/Ehya-blog/"
-              class="logotop__link"
-              target="_blank"
-              ><img src="image/Logo.png" alt="Logo Top" class="logotop__image"
-            /></a>
-          </div>
-          <!-- /.logotop -->
-          <div class="navigation__wrappep">
-            <ul class="navbar">
-              <li class="navbar__item">
-                <a href="#" class="navbar__link" target="_blank">Домой</a>
-              </li>
-              <li class="navbar__item">
-                <a href="#" class="navbar__link" target="_blank"></a>
-                <select class="navbar__select">
-                  <option value="#" class="navbar__select--item">
-                    Продающий
-                  </option>
-                  <option value="#" class="navbar__select--item">
-                    Подписной
-                  </option>
-                  <option value="#" class="navbar__select--item">
-                    Информационный
-                  </option>
-                  <option value="#" class="navbar__select--item">
-                    Вирусный
-                  </option>
-                  <option value="#" class="navbar__select--item">
-                    Дифференцированный
-                  </option>
-                  <option
-                    value="#"
-                    selected="selected"
-                    class="navbar__select--item"
-                  >
-                    Лендинги
-                  </option>
-                </select>
-              </li>
-              <li class="navbar__item">
-                <a href="#" class="navbar__link" target="_blank"></a>
-                <select class="navbar__select">
-                  <option value="#" class="navbar__select--item">
-                    Главная
-                  </option>
-                  <option value="#" class="navbar__select--item">Статьи</option>
-                  <option value="#" class="navbar__select--item">
-                    Отдел продаж
-                  </option>
-                  <option value="#" class="navbar__select--item">О нас</option>
-                  <option value="#" class="navbar__select--item">
-                    Сотрудничество
-                  </option>
-                  <option
-                    value="#"
-                    selected="selected"
-                    class="navbar__select--item"
-                  >
-                    Страницы
-                  </option>
-                </select>
-              </li>
-              <li class="navbar__item">
-                <a href="#" class="navbar__link" target="_blank">Помощь</a>
-              </li>
-            </ul>
-            <button class="button navigation__button">Получить</button>
-            <!-- /.button -->
-          </div>
-        </section>
-        <!-- /.navigation -->
-        <div class="search">
-          <h1 class="search__title">Отдел новостей</h1>
-          <!-- /.header-title -->
-          <div class="form-wrappep">
-            <form action="#" class="search__form">
-              <input
-                type="text"
-                class="search__input"
-                placeholder="Поиск постов"
-              />
-              <img
-                src="image/search.svg"
-                alt="search icon"
-                class="search__image"
-              />
-
-              <button class="search__button">Поиск</button>
-            </form>
-
-            <div class="tegs">
-              <span class="tegs__info">Популярные теги:</span>
-              <button class="tegs__button">Design</button>
-              <button class="tegs__button">User Experience</button>
-              <button class="tegs__button">User Interfaces</button>
+      <div class="header-wrappep">
+        <div class="container">
+          <section class="navigation">
+            <div class="logotop">
+              <a
+                href="https://innabatalova.ru/Ehya-blog/"
+                class="logotop__link"
+                target="_blank"
+                ><img
+                  src="image/Logo.png"
+                  alt="Logo Top"
+                  class="logotop__image"
+              /></a>
             </div>
-            <!-- /.tegs -->
+            <!-- /.logotop -->
+            <div class="navigation__wrappep">
+              <ul class="navbar">
+                <li class="navbar__item">
+                  <a href="#" class="navbar__link" target="_blank">Домой</a>
+                </li>
+                <li class="navbar__item">
+                  <a href="#" class="navbar__link" target="_blank"></a>
+                  <select class="navbar__select">
+                    <option value="#" class="navbar__select--item">
+                      Продающий
+                    </option>
+                    <option value="#" class="navbar__select--item">
+                      Подписной
+                    </option>
+                    <option value="#" class="navbar__select--item">
+                      Информационный
+                    </option>
+                    <option value="#" class="navbar__select--item">
+                      Вирусный
+                    </option>
+                    <option value="#" class="navbar__select--item">
+                      Дифференцированный
+                    </option>
+                    <option
+                      value="#"
+                      selected="selected"
+                      class="navbar__select--item"
+                    >
+                      Лендинги
+                    </option>
+                  </select>
+                </li>
+                <li class="navbar__item">
+                  <a href="#" class="navbar__link" target="_blank"></a>
+                  <select class="navbar__select">
+                    <option value="#" class="navbar__select--item">
+                      Главная
+                    </option>
+                    <option value="#" class="navbar__select--item">
+                      Статьи
+                    </option>
+                    <option value="#" class="navbar__select--item">
+                      Отдел продаж
+                    </option>
+                    <option value="#" class="navbar__select--item">
+                      О нас
+                    </option>
+                    <option value="#" class="navbar__select--item">
+                      Сотрудничество
+                    </option>
+                    <option
+                      value="#"
+                      selected="selected"
+                      class="navbar__select--item"
+                    >
+                      Страницы
+                    </option>
+                  </select>
+                </li>
+                <li class="navbar__item">
+                  <a href="#" class="navbar__link" target="_blank">Помощь</a>
+                </li>
+              </ul>
+              <button class="button navigation__button">Получить</button>
+              <!-- /.button -->
+              <button type="button" class="navbar__mobile">
+                <span class="navbar__line"></span>
+                <span class="navbar__line"></span>
+                <span class="navbar__line"></span>
+              </button>
+            </div>
+          </section>
+          <!-- /.navigation -->
+          <div class="search">
+            <h1 class="search__title">Отдел новостей</h1>
+            <!-- /.header-title -->
+            <div class="form-wrappep">
+              <form action="#" class="search__form">
+                <input
+                  type="text"
+                  class="search__input"
+                  placeholder="Поиск постов"
+                />
+                <img
+                  src="image/search.svg"
+                  alt="search icon"
+                  class="search__image"
+                />
+
+                <button class="search__button">Поиск</button>
+              </form>
+
+              <div class="tegs">
+                <span class="tegs__info">Популярные теги:</span>
+                <button type="button" class="tegs__button">Design</button>
+                <button type="button" class="tegs__button">
+                  User Experience
+                </button>
+                <button type="button" class="tegs__button">
+                  User Interfaces
+                </button>
+              </div>
+              <!-- /.tegs -->
+            </div>
           </div>
+          <!-- /.search -->
         </div>
-        <!-- /.search -->
       </div>
+      <!-- /.header-wrappep -->
     </header>
     <!-- /.header -->
   </body>

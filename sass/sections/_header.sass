@@ -1,23 +1,24 @@
 .header
-  position: relative
-  background-image: url(../image/header-bg.jpg)
-  height: 740px
-  background-repeat: no-repeat
-  object-fit: cover
-  background-size: 100%
-  overflow: hidden
-  z-index: 0
 
-  &:before
-    content: ''
-    position: absolute
-    left: 0
-    top: 0
-    right: 0
-    bottom: 0
-    background: #183B56
-    opacity: 65%
-    z-index: -1
+  &-wrappep
+    position: relative
+    background-image: url(../image/header-bg.jpg)
+    height: 740px
+    background-repeat: no-repeat
+    background-size: 100%
+    overflow: hidden
+    z-index: 0
+
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      right: 0
+      bottom: 0
+      background: #183B56
+      opacity: 65%
+      z-index: -1
 
 .navigation
   display: flex
@@ -34,7 +35,7 @@
     padding: 13px 24px
     border-radius: 8px
     background-color: transparent
-    width: 130px
+    max-width: 130px
     height: 50px
     color: #FFFFFF
     border: 2px solid #FFFFFF
@@ -68,8 +69,11 @@
     padding-top: 5px
     margin-left: 3px
 
+  &__mobile
+    display: none
+
   &__select
-    min-width: 95px
+    max-width: 95px
     color: inherit
     outline: none
     border: none
