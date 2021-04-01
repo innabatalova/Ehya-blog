@@ -18,6 +18,7 @@ a:hover {
 
 img {
   max-width: 100%;
+  max-height: 100%;
 }
 
 button {
@@ -396,8 +397,6 @@ template {
   background-image: url(../image/header-bg.jpg);
   height: 740px;
   background-repeat: no-repeat;
-  background-size: 100%;
-  overflow: hidden;
   z-index: 0;
 }
 
@@ -440,6 +439,10 @@ template {
   line-height: 22px;
 }
 
+.navigation__mobile {
+  display: none;
+}
+
 .logo__image {
   width: 90px;
   height: 28px;
@@ -468,10 +471,6 @@ template {
   margin-left: 3px;
 }
 
-.navbar__mobile {
-  display: none;
-}
-
 .navbar__select {
   max-width: 95px;
   color: inherit;
@@ -487,7 +486,7 @@ template {
   appearance: none;
 }
 
-.navbar__select--item {
+.navbar__option {
   width: 95px;
   background-color: #183B56;
   color: inherit;
@@ -572,6 +571,130 @@ template {
   margin-right: 20px;
 }
 
+.offers {
+  max-height: 380px;
+  margin-bottom: 50px;
+  margin-top: -190px;
+}
+
+.offers-wrappep {
+  position: relative;
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #E5EAF4;
+  box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.03);
+  z-index: 99;
+}
+
+.offers__message {
+  padding: 32px 48px 32px 32px;
+}
+
+.offers__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.offers__button {
+  padding: 6px 12px;
+  margin-bottom: 16px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: #36B37E 0.01;
+  color: #36B37E;
+  border: none;
+}
+
+.offers__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 31px;
+  line-height: 48px;
+  color: #183B56;
+}
+
+.offers__info {
+  margin: 0;
+  margin-bottom: 43px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #5A7184;
+}
+
+.offers__username {
+  margin-bottom: 6px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #183B56;
+}
+
+.offers__icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.offers__status {
+  font-family: Open Sans;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #5A7184;
+}
+
+.offers__data {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #5A7184;
+}
+
+.offers__uswrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.offers__namewrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.offers__ustext {
+  display: flex;
+  flex-direction: column;
+}
+
+.offers__writer {
+  display: flex;
+}
+
+.offers__wrapper {
+  display: flex;
+  align-items: center;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -627,7 +750,7 @@ template {
     font-size: 12px;
     line-height: 18px;
   }
-  .navbar__select--item {
+  .navbar__option {
     font-size: 12px;
     line-height: 18px;
   }
@@ -671,22 +794,22 @@ template {
   .navbar {
     display: none;
   }
-  .navbar__mobile {
+  .navigation__button {
+    display: none;
+  }
+  .navigation__mobile {
     display: flex;
     flex-direction: column;
     height: 23px;
     background-color: transparent;
     border: none;
   }
-  .navbar__line {
+  .navigation__line {
     width: 22px;
     height: 2px;
     margin-bottom: 5px;
     border-radius: 8px;
     background-color: #ffffff;
-  }
-  .navigation__button {
-    display: none;
   }
   .search {
     padding-top: 0;

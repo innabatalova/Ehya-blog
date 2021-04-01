@@ -13,8 +13,12 @@
       rel="stylesheet"
     />
 
-    <!-- <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="image/favicon.ico" type="image/x-icon" /> -->
+    <link
+      rel="shortcut icon"
+      href="image/favicon-main.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="image/favicon-main.ico" type="image/x-icon" />
   </head>
   <body>
     <header class="header">
@@ -41,25 +45,19 @@
                 <li class="navbar__item">
                   <a href="#" class="navbar__link" target="_blank"></a>
                   <select class="navbar__select">
-                    <option value="#" class="navbar__select--item">
-                      Продающий
-                    </option>
-                    <option value="#" class="navbar__select--item">
-                      Подписной
-                    </option>
-                    <option value="#" class="navbar__select--item">
+                    <option value="#" class="navbar__option">Продающий</option>
+                    <option value="#" class="navbar__option">Подписной</option>
+                    <option value="#" class="navbar__option">
                       Информационный
                     </option>
-                    <option value="#" class="navbar__select--item">
-                      Вирусный
-                    </option>
-                    <option value="#" class="navbar__select--item">
+                    <option value="#" class="navbar__option">Вирусный</option>
+                    <option value="#" class="navbar__option">
                       Дифференцированный
                     </option>
                     <option
                       value="#"
                       selected="selected"
-                      class="navbar__select--item"
+                      class="navbar__option"
                     >
                       Лендинги
                     </option>
@@ -68,25 +66,19 @@
                 <li class="navbar__item">
                   <a href="#" class="navbar__link" target="_blank"></a>
                   <select class="navbar__select">
-                    <option value="#" class="navbar__select--item">
-                      Главная
-                    </option>
-                    <option value="#" class="navbar__select--item">
-                      Статьи
-                    </option>
-                    <option value="#" class="navbar__select--item">
+                    <option value="#" class="navbar__option">Главная</option>
+                    <option value="#" class="navbar__option">Статьи</option>
+                    <option value="#" class="navbar__option">
                       Отдел продаж
                     </option>
-                    <option value="#" class="navbar__select--item">
-                      О нас
-                    </option>
-                    <option value="#" class="navbar__select--item">
+                    <option value="#" class="navbar__option">О нас</option>
+                    <option value="#" class="navbar__option">
                       Сотрудничество
                     </option>
                     <option
                       value="#"
                       selected="selected"
-                      class="navbar__select--item"
+                      class="navbar__option"
                     >
                       Страницы
                     </option>
@@ -98,10 +90,10 @@
               </ul>
               <button class="button navigation__button">Получить</button>
               <!-- /.button -->
-              <button type="button" class="navbar__mobile">
-                <span class="navbar__line"></span>
-                <span class="navbar__line"></span>
-                <span class="navbar__line"></span>
+              <button type="button" class="navigation__mobile">
+                <span class="navigation__line"></span>
+                <span class="navigation__line"></span>
+                <span class="navigation__line"></span>
               </button>
             </div>
           </section>
@@ -144,5 +136,55 @@
       <!-- /.header-wrappep -->
     </header>
     <!-- /.header -->
+    <div class="offers">
+      <div class="container">
+        <div class="offers-wrappep">
+          <img
+            src="image/offers-img.png"
+            alt="offers image"
+            class="offers__image"
+          />
+          <div class="offers__message">
+            <button class="button offers__button">Предложения</button>
+            <!-- /.button -->
+            <h2 class="offers__title">
+              Дешевые Авиабилеты - Отличный Способ Сэкономить
+            </h2>
+
+            <p class="offers__info">
+              В этом цифровом поколении, где информацию можно легко получить за
+              секунды, визитки ...
+            </p>
+            <div class="offers__wrapper">
+              <img
+                src="image/offers-avatar.png"
+                alt="offer avatar"
+                class="offers__avatar"
+              />
+              <div class="offers__uswrapper">
+                <div class="offers__namewrapper">
+                  <div class="offers__ustext">
+                    <span class="offers__username">Viola Manisa</span>
+                    <div class="offers__writer">
+                      <img
+                        src="image/username-icon.svg"
+                        alt="icon user"
+                        class="offers__icon"
+                      />
+                      <span class="offers__status">Verified writer</span>
+                    </div>
+                  </div>
+                  <div><span class="offers__data">02 May</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.offers__message -->
+        </div>
+        <!-- /.offers-wrappep -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.offers -->
   </body>
 </html>

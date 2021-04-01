@@ -5,8 +5,6 @@
     background-image: url(../image/header-bg.jpg)
     height: 740px
     background-repeat: no-repeat
-    background-size: 100%
-    overflow: hidden
     z-index: 0
 
     &:before
@@ -44,6 +42,9 @@
     font-size: 16px
     line-height: 22px
 
+  &__mobile
+    display: none
+
 .logo
 
   &__image
@@ -69,9 +70,6 @@
     padding-top: 5px
     margin-left: 3px
 
-  &__mobile
-    display: none
-
   &__select
     max-width: 95px
     color: inherit
@@ -86,14 +84,14 @@
     background-position: right
     appearance: none
 
-    &--item
-      width: 95px
-      background-color: #183B56
-      color: inherit
-      font-style: normal
-      font-weight: 600
-      font-size: 16px
-      line-height: 22px
+  &__option
+    width: 95px
+    background-color: #183B56
+    color: inherit
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
 
 .search
   display: flex
