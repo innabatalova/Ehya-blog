@@ -15,7 +15,7 @@
 
   &__text
     display: inline-block
-    width: 670px
+    max-width: 670px
     margin-top: 0
     margin-bottom: 25px
     font-family: Open Sans
@@ -44,9 +44,9 @@
     position: relative
     display: flex
     flex-direction: column
-    justify-content: space-between
+    justify-content: end
     border-radius: 16px
-    width: 555px
+    max-width: 555px
     height: 600px
     padding: 40px 50px 40px
 
@@ -63,10 +63,16 @@
 
     &--left
       background: url(../image/popular-bg1.jpg)
+      background-size: 100%
+      background-repeat: no-repeat
+      object-fit: cover
       z-index: -2
 
     &--right
       background: url(../image/popular-bg2.jpg)
+      background-size: 100%
+      background-repeat: no-repeat
+      object-fit: cover
       z-index: -2
 
   &__arrow
@@ -78,7 +84,6 @@
 .card
   display: flex
   justify-content: space-between
-  margin-bottom: 100px
 
   &__button
     position: absolute
@@ -96,13 +101,15 @@
     border-radius: 2000px
 
   &__title
-    margin-top: 300px
     font-family: Roboto
     font-style: normal
     font-weight: bold
     font-size: 36px
     line-height: 48px
     color: #FFFFFF
+
+    &--left
+      margin-bottom: 73px
 
   &__username
     color: #ffffff

@@ -37,6 +37,14 @@
       font-size: 12px
       line-height: 15px
 
+  .popular
+
+    &__card
+      height: 500px
+
+      &--left
+        margin-right: 8px
+
 @media ( max-width: 992px )
   .container
     max-width: 700px
@@ -72,6 +80,28 @@
 
     &__image
       border-radius: 16px 0 0 16px
+
+  .popular
+
+    &__button
+      margin-top: 15px
+      top: 100%
+      left: 38%
+
+    &__card
+      height: 380px
+
+    &__text
+      font-size: 11px
+      line-height: 24px
+
+  .card
+
+    &__title
+      margin-top: 35px
+      margin-bottom: 10px
+      font-size: 28px
+      line-height: 35px
 
 @media ( max-width: 768px )
   .container
@@ -164,6 +194,73 @@
 
     &__icon
       margin-right: 0
+
+  .popular
+
+    &-wrapper
+      display: flex
+      flex-direction: column
+      align-items: center
+
+    &__title
+      margin-top: 35px
+      margin-bottom: 10px
+      font-size: 24px
+      line-height: 32px
+
+    &__text
+      font-size: 11px
+      line-height: 24px
+
+    &__button
+      padding: 9px 18px
+      margin-top: 10px
+      font-size: 14px
+      line-height: 20px
+      left: 37%
+      font-family: Open Sans
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 22px
+
+    &__card
+      height: 350px
+      margin-bottom: 16px
+      padding: 20px
+
+    &__avatar
+      width: 36px
+      height: 36px
+
+    &__username
+      font-size: 14px
+      line-height: 20px
+      margin-bottom: 0
+
+    &__status
+      font-size: 12px
+      line-height: 16px
+
+    &__data
+      font-size: 14px
+      line-height: 20px
+
+  .card
+    flex-direction: column
+
+    &__button
+      top: 22px
+      left: 15px
+      font-size: 14px
+      line-height: 20px
+
+    &__title
+      font-size: 20px
+      line-height: 24px
+
+      &--left
+        margin-bottom: 20px
 
 @media ( max-width: 576px )
   .container
@@ -310,3 +407,20 @@
 
     &__username
       margin-bottom: 2px
+
+  .popular
+
+    &__title
+      margin-top: 18px
+      margin-bottom: 10px
+      font-size: 24px
+      line-height: 32px
+
+    &__button
+      left: 20%
+
+    &__card
+      height: 290px
+
+  .card
+    width: 100%

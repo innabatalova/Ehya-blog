@@ -769,7 +769,7 @@ template {
 
 .popular__text {
   display: inline-block;
-  width: 670px;
+  max-width: 670px;
   margin-top: 0;
   margin-bottom: 25px;
   font-family: Open Sans;
@@ -800,9 +800,9 @@ template {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: end;
   border-radius: 16px;
-  width: 555px;
+  max-width: 555px;
   height: 600px;
   padding: 40px 50px 40px;
 }
@@ -821,11 +821,17 @@ template {
 
 .popular__card--left {
   background: url(../image/popular-bg1.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
   z-index: -2;
 }
 
 .popular__card--right {
   background: url(../image/popular-bg2.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
   z-index: -2;
 }
 
@@ -840,7 +846,6 @@ template {
 .card {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 100px;
 }
 
 .card__button {
@@ -860,13 +865,16 @@ template {
 }
 
 .card__title {
-  margin-top: 300px;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 48px;
   color: #FFFFFF;
+}
+
+.card__title--left {
+  margin-bottom: 73px;
 }
 
 .card__username {
@@ -910,6 +918,12 @@ template {
     font-size: 12px;
     line-height: 15px;
   }
+  .popular__card {
+    height: 500px;
+  }
+  .popular__card--left {
+    margin-right: 8px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -943,6 +957,24 @@ template {
   }
   .offers__image {
     border-radius: 16px 0 0 16px;
+  }
+  .popular__button {
+    margin-top: 15px;
+    top: 100%;
+    left: 38%;
+  }
+  .popular__card {
+    height: 380px;
+  }
+  .popular__text {
+    font-size: 11px;
+    line-height: 24px;
+  }
+  .card__title {
+    margin-top: 35px;
+    margin-bottom: 10px;
+    font-size: 28px;
+    line-height: 35px;
   }
 }
 
@@ -1027,6 +1059,71 @@ template {
   }
   .offers__icon {
     margin-right: 0;
+  }
+  .popular-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .popular__title {
+    margin-top: 35px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .popular__text {
+    font-size: 11px;
+    line-height: 24px;
+  }
+  .popular__button {
+    padding: 9px 18px;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    left: 37%;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .popular__card {
+    height: 350px;
+    margin-bottom: 16px;
+    padding: 20px;
+  }
+  .popular__avatar {
+    width: 36px;
+    height: 36px;
+  }
+  .popular__username {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+  }
+  .popular__status {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .popular__data {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .card {
+    flex-direction: column;
+  }
+  .card__button {
+    top: 22px;
+    left: 15px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .card__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .card__title--left {
+    margin-bottom: 20px;
   }
 }
 
@@ -1171,6 +1268,21 @@ template {
   }
   .offers__username {
     margin-bottom: 2px;
+  }
+  .popular__title {
+    margin-top: 18px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .popular__button {
+    left: 20%;
+  }
+  .popular__card {
+    height: 290px;
+  }
+  .card {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
