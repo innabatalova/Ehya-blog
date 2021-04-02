@@ -54,6 +54,74 @@ select {
   margin: auto;
 }
 
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.author__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.author__username {
+  margin-bottom: 6px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.author__icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.author__status {
+  font-family: Open Sans;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #5A7184;
+}
+
+.author__data {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #5A7184;
+}
+
+.author__uswrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.author__namewrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.author__ustext {
+  display: flex;
+  flex-direction: column;
+}
+
+.author__writer {
+  display: flex;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -643,13 +711,6 @@ template {
   padding: 32px 48px 32px 32px;
 }
 
-.offers__avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin-right: 12px;
-}
-
 .offers__button {
   padding: 6px 12px;
   margin-bottom: 16px;
@@ -688,65 +749,128 @@ template {
 }
 
 .offers__username {
-  margin-bottom: 6px;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 22px;
   color: #183B56;
 }
 
-.offers__icon {
-  width: 16px;
-  height: 16px;
-  margin-right: 8px;
+.popular-wrapper {
+  position: relative;
 }
 
-.offers__status {
+.popular__title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  color: #183B56;
+  margin-top: 96px;
+  margin-bottom: 16px;
+}
+
+.popular__text {
+  display: inline-block;
+  width: 670px;
+  margin-top: 0;
+  margin-bottom: 25px;
   font-family: Open Sans;
-  font-style: italic;
+  font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 19px;
+  font-size: 18px;
+  line-height: 32px;
   color: #5A7184;
 }
 
-.offers__data {
+.popular__button {
+  position: absolute;
+  padding: 10px 20px;
+  right: 0;
+  top: 64px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  border: none;
+  color: #1565D8;
+  border: 2px solid #1565D8;
+  background-color: #ffffff;
+}
+
+.popular__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 16px;
+  width: 555px;
+  height: 600px;
+  padding: 40px 50px 40px;
+}
+
+.popular__card:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(24, 59, 86, 0.0001) 0%, #152532 100%);
+  border-radius: 16px;
+  z-index: -1;
+}
+
+.popular__card--left {
+  background: url(../image/popular-bg1.jpg);
+  z-index: -2;
+}
+
+.popular__card--right {
+  background: url(../image/popular-bg2.jpg);
+  z-index: -2;
+}
+
+.popular__arrow {
+  margin-left: 8px;
+}
+
+.popular__link {
+  display: block;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.card__button {
+  position: absolute;
+  padding: 5px 14px;
+  top: 32px;
+  left: 32px;
   font-family: Open Sans;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
-  color: #5A7184;
+  border: none;
+  color: #36B37E;
+  background-color: #ffffff;
+  border-radius: 2000px;
 }
 
-.offers__uswrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
+.card__title {
+  margin-top: 300px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  color: #FFFFFF;
 }
 
-.offers__namewrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.offers__ustext {
-  display: flex;
-  flex-direction: column;
-}
-
-.offers__writer {
-  display: flex;
-}
-
-.offers__wrapper {
-  display: flex;
-  align-items: center;
+.card__username {
+  color: #ffffff;
 }
 
 @media (max-width: 1200px) {
