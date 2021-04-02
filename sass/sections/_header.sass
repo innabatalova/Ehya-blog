@@ -1,7 +1,8 @@
 .header
   position: relative
+  overflow: hidden
 
-  &-wrappep
+  &-wrapper
     position: relative
     width: 150%
     top: 0
@@ -36,6 +37,7 @@
       right: 0
       bottom: 0
       z-index: -2
+      object-fit: cover
 
 .navigation
   display: flex
@@ -44,7 +46,7 @@
   height: 100px
   padding: 26px 0
 
-  &__wrappep
+  &__wrapper
     display: flex
     justify-content: space-between
 
@@ -180,3 +182,23 @@
     border: 1px solid #FFFFFF
     padding: 6px 18px
     margin-right: 15px
+
+.container-select
+  display: block
+  height: 22px
+  overflow: hidden
+  max-width: 108px
+  background-color: transparent
+  padding-left: 15px
+  margin-top: -21px
+
+  &:hover
+    overflow: visible
+
+.navbar
+
+  &__linker
+    max-width: 100px
+
+.select
+  display: flex

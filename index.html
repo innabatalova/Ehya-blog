@@ -22,7 +22,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-wrappep">
+      <div class="header-wrapper">
         <div class="container">
           <section class="navigation">
             <div class="logotop">
@@ -37,7 +37,7 @@
               /></a>
             </div>
             <!-- /.logotop -->
-            <div class="navigation__wrappep">
+            <div class="navigation__wrapper">
               <ul class="navbar">
                 <li class="navbar__item">
                   <a href="#" class="navbar__link" target="_blank">Домой</a>
@@ -65,16 +65,10 @@
                 </li>
                 <li class="navbar__item">
                   <a href="#" class="navbar__link" target="_blank"></a>
-                  <select class="navbar__select">
-                    <option value="#" class="navbar__option">Главная</option>
-                    <option value="#" class="navbar__option">Статьи</option>
-                    <option value="#" class="navbar__option">
-                      Отдел продаж
-                    </option>
-                    <option value="#" class="navbar__option">О нас</option>
-                    <option value="#" class="navbar__option">
-                      Сотрудничество
-                    </option>
+                  <!-- <select class="navbar__select">
+                    <option value="#" class="navbar__option">Страница 1</option>
+                    <option value="#" class="navbar__option">Страница 2</option>
+
                     <option
                       value="#"
                       selected="selected"
@@ -82,7 +76,17 @@
                     >
                       Страницы
                     </option>
-                  </select>
+                  </select> -->
+                  <div class="container-select">
+                    <div class="select">
+                      <a href="#" class="select__link">Страницы</a
+                      ><img src="image/angle-down.svg" alt="arrow icon" />
+                    </div>
+                    <ul>
+                      <li class="navbar__linker"><a href="#">Страница 1</a></li>
+                      <li class="navbar__linker"><a href="#">Страница 2</a></li>
+                    </ul>
+                  </div>
                 </li>
                 <li class="navbar__item">
                   <a href="#" class="navbar__link" target="_blank">Помощь</a>
@@ -138,7 +142,7 @@
     <!-- /.header -->
     <div class="offers">
       <div class="container">
-        <div class="offers-wrappep">
+        <div class="offers-wrapper">
           <img
             src="image/offers-img.png"
             alt="offers image"
