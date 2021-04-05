@@ -663,6 +663,7 @@ template {
   border: 1px solid #FFFFFF;
   padding: 6px 18px;
   margin-right: 15px;
+  border-radius: 4px;
 }
 
 .container-select {
@@ -800,7 +801,7 @@ template {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   border-radius: 16px;
   max-width: 555px;
   height: 600px;
