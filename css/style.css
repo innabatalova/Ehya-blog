@@ -723,6 +723,7 @@ template {
   background-color: #36B37E 0.01;
   color: #36B37E;
   border: none;
+  text-transform: uppercase;
 }
 
 .offers__title {
@@ -1206,6 +1207,7 @@ template {
   }
   .search__title {
     margin-bottom: 30px;
+    margin-top: 20px;
   }
   .search__form {
     display: flex;
@@ -1235,6 +1237,7 @@ template {
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
+    margin-right: 70px;
   }
   .tegs__button {
     margin-right: 8px;
@@ -1261,7 +1264,8 @@ template {
     padding: 26px 20px 24px;
   }
   .offers__button {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    margin-top: -5px;
   }
   .offers__info {
     display: block;
@@ -1271,7 +1275,7 @@ template {
     margin-bottom: 2px;
   }
   .popular__title {
-    margin-top: 18px;
+    margin-top: 0;
     margin-bottom: 10px;
     font-size: 24px;
     line-height: 32px;
