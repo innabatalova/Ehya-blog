@@ -1,4 +1,4 @@
-.popular
+.recent
 
   &__title
     font-size: 36px
@@ -9,7 +9,7 @@
   &__text
     max-width: 670px
     margin-top: 0
-    margin-bottom: 25px
+    margin-bottom: 48px
     font-size: 18px
     line-height: 32px
 
@@ -17,9 +17,12 @@
     position: absolute
     padding: 10px 20px
     right: 0
-    top: 64px
+    top: 50px
     font-size: 16px
     line-height: 22px
+
+  &__link
+    display: block
 
   &__card
     position: relative
@@ -27,9 +30,9 @@
     flex-direction: column
     justify-content: flex-end
     border-radius: 16px
-    max-width: 555px
-    height: 600px
-    padding: 40px 50px 40px
+    padding: 40px 32px
+    max-width: 360px
+    height: 500px
 
     &:before
       content: ''
@@ -43,52 +46,48 @@
       z-index: -1
 
     &--left
-      background: url(../image/popular-bg1.jpg)
+      background: url(../image/recent-bg-one.png)
+      background-size: 100%
+      background-repeat: no-repeat
+      object-fit: cover
+      z-index: -2
+
+    &--middle
+      background: url(../image/recent-bg-two.png)
       background-size: 100%
       background-repeat: no-repeat
       object-fit: cover
       z-index: -2
 
     &--right
-      background: url(../image/popular-bg2.jpg)
+      background: url(../image/recent-bg-three.png)
       background-size: 100%
       background-repeat: no-repeat
       object-fit: cover
       z-index: -2
 
-  &__arrow
-    margin-left: 8px
+  &__annotation
+    font-family: Open Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 25px
+    margin: 0
+    margin-bottom: 21px
 
-  &__link
-    display: block
+    &--right
+      margin-bottom: 45px
+
+  &__username
+    font-size: 16px
+    line-height: 22px
 
 .card
 
-  &__button
-    position: absolute
-    padding: 5px 14px
-    top: 32px
-    left: 32px
-    font-family: Open Sans
-    font-style: normal
-    font-weight: 600
-    font-size: 16px
-    line-height: 22px
-    border: none
-    color: $offers-color
-    background-color: #ffffff
-    border-radius: 2000px
-
   &__title
-    font-family: Roboto
-    font-style: normal
-    font-weight: bold
-    font-size: 36px
-    line-height: 48px
-    color: #FFFFFF
 
-    &--left
-      margin-bottom: 73px
-
-  &__username
-    color: #ffffff
+    &--recent
+      margin: 0
+      font-size: 28px
+      line-height: 36px
+      margin-bottom: 12px

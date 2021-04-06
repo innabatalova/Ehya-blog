@@ -122,6 +122,43 @@ select {
   display: flex;
 }
 
+.articles {
+  position: relative;
+}
+
+.articles__title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  color: #183B56;
+}
+
+.articles__text {
+  display: inline-block;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  color: #5A7184;
+}
+
+.articles__button {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  color: #1565D8;
+  border: 2px solid #1565D8;
+  background-color: #ffffff;
+}
+
+.articles__arrow {
+  margin-left: 8px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -754,32 +791,19 @@ template {
   color: #183B56;
 }
 
-.popular-wrapper {
-  position: relative;
-}
-
 .popular__title {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
   font-size: 36px;
   line-height: 48px;
-  color: #183B56;
   margin-top: 96px;
   margin-bottom: 16px;
 }
 
 .popular__text {
-  display: inline-block;
   max-width: 670px;
   margin-top: 0;
   margin-bottom: 25px;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 32px;
-  color: #5A7184;
 }
 
 .popular__button {
@@ -787,15 +811,8 @@ template {
   padding: 10px 20px;
   right: 0;
   top: 64px;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: bold;
   font-size: 16px;
   line-height: 22px;
-  border: none;
-  color: #1565D8;
-  border: 2px solid #1565D8;
-  background-color: #ffffff;
 }
 
 .popular__card {
@@ -845,11 +862,6 @@ template {
   display: block;
 }
 
-.card {
-  display: flex;
-  justify-content: space-between;
-}
-
 .card__button {
   position: absolute;
   padding: 5px 14px;
@@ -881,6 +893,107 @@ template {
 
 .card__username {
   color: #ffffff;
+}
+
+.recent__title {
+  font-size: 36px;
+  line-height: 48px;
+  margin-top: 96px;
+  margin-bottom: 16px;
+}
+
+.recent__text {
+  max-width: 670px;
+  margin-top: 0;
+  margin-bottom: 48px;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.recent__button {
+  position: absolute;
+  padding: 10px 20px;
+  right: 0;
+  top: 50px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.recent__link {
+  display: block;
+}
+
+.recent__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 16px;
+  padding: 40px 32px;
+  max-width: 360px;
+  height: 500px;
+}
+
+.recent__card:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(24, 59, 86, 0.0001) 0%, #152532 100%);
+  border-radius: 16px;
+  z-index: -1;
+}
+
+.recent__card--left {
+  background: url(../image/recent-bg-one.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.recent__card--middle {
+  background: url(../image/recent-bg-two.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.recent__card--right {
+  background: url(../image/recent-bg-three.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.recent__annotation {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  margin: 0;
+  margin-bottom: 21px;
+}
+
+.recent__annotation--right {
+  margin-bottom: 45px;
+}
+
+.recent__username {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.card__title--recent {
+  margin: 0;
+  font-size: 28px;
+  line-height: 36px;
+  margin-bottom: 12px;
 }
 
 @media (max-width: 1200px) {
@@ -1284,10 +1397,13 @@ template {
     left: 20%;
   }
   .popular__card {
-    height: 290px;
+    height: 320px;
   }
   .card {
     width: 100%;
+  }
+  .card__title--left {
+    margin-bottom: 45px;
   }
 }
 /*# sourceMappingURL=style.css.map */
