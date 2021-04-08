@@ -801,7 +801,7 @@ template {
 .popular__text {
   max-width: 670px;
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 45px;
   font-size: 18px;
   line-height: 32px;
 }
@@ -913,7 +913,7 @@ template {
 .recent__button {
   position: absolute;
   padding: 10px 20px;
-  right: 0;
+  right: 10px;
   top: 50px;
   font-size: 16px;
   line-height: 22px;
@@ -947,7 +947,7 @@ template {
 }
 
 .recent__card--left {
-  background: url(../image/recent-bg-one.png);
+  background: url(../image/recent-bg-three.png);
   background-size: 100%;
   background-repeat: no-repeat;
   object-fit: cover;
@@ -963,7 +963,7 @@ template {
 }
 
 .recent__card--right {
-  background: url(../image/recent-bg-three.png);
+  background: url(../image/recent-bg-one.png);
   background-size: 100%;
   background-repeat: no-repeat;
   object-fit: cover;
