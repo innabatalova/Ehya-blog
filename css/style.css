@@ -1039,6 +1039,22 @@ template {
   .popular__card--left {
     margin-right: 8px;
   }
+  .recent__card {
+    height: 430px;
+  }
+  .recent__card--left {
+    margin-right: 15px;
+  }
+  .recent__card--middle {
+    margin-right: 15px;
+  }
+  .recent__annotation--right {
+    margin-bottom: 21px;
+  }
+  .card__title--recent {
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1179,6 +1195,7 @@ template {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 130px;
   }
   .popular__title {
     margin-top: 35px;
@@ -1239,6 +1256,65 @@ template {
   }
   .card__title--left {
     margin-bottom: 20px;
+  }
+  .recent-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .recent__title {
+    margin-top: 35px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .recent__text {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 24px;
+    align-items: center;
+    margin-bottom: 13px;
+  }
+  .recent__button {
+    padding: 9px 18px;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    top: 100%;
+    left: 37%;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .recent__card {
+    height: 350px;
+    margin-bottom: 16px;
+    padding: 20px;
+  }
+  .recent__annotation {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .recent__avatar {
+    width: 36px;
+    height: 36px;
+  }
+  .recent__username {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+  }
+  .recent__status {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .recent__data {
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 
@@ -1397,6 +1473,24 @@ template {
     left: 20%;
   }
   .popular__card {
+    height: 320px;
+  }
+  .card {
+    width: 100%;
+  }
+  .card__title--left {
+    margin-bottom: 45px;
+  }
+  .recent__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .recent__button {
+    left: 20%;
+  }
+  .recent__card {
     height: 320px;
   }
   .card {
