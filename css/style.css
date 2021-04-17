@@ -1035,12 +1035,14 @@ template {
   }
   .popular__card {
     height: 500px;
+    width: 65%;
   }
   .popular__card--left {
     margin-right: 8px;
   }
   .recent__card {
     height: 430px;
+    width: 45%;
   }
   .recent__card--left {
     margin-right: 15px;
@@ -1098,14 +1100,60 @@ template {
     height: 380px;
   }
   .popular__text {
-    font-size: 11px;
-    line-height: 24px;
+    font-size: 15px;
+    line-height: 32px;
   }
   .card__title {
     margin-top: 35px;
     margin-bottom: 10px;
     font-size: 28px;
     line-height: 35px;
+  }
+  .recent__button {
+    margin-top: 15px;
+    top: 100%;
+    left: 38%;
+  }
+  .recent__card {
+    height: 300px;
+    padding: 16px;
+  }
+  .recent__text {
+    font-size: 15px;
+    line-height: 32px;
+  }
+  .recent__annotation {
+    font-size: 11px;
+    line-height: 24px;
+    margin: 0;
+  }
+  .recent__avatar {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+  }
+  .recent__username {
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 0;
+  }
+  .recent__status {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .recent__icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 0;
+  }
+  .recent__data {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .card__title {
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0;
   }
 }
 
@@ -1221,8 +1269,13 @@ template {
   }
   .popular__card {
     height: 350px;
+    width: 100%;
     margin-bottom: 16px;
     padding: 20px;
+  }
+  .popular__card--left {
+    margin-right: 0;
+    margin-bottom: 16px;
   }
   .popular__avatar {
     width: 36px;
@@ -1243,6 +1296,7 @@ template {
   }
   .card {
     flex-direction: column;
+    width: 100%;
   }
   .card__button {
     top: 22px;
@@ -1263,7 +1317,7 @@ template {
     align-items: center;
   }
   .recent__title {
-    margin-top: 35px;
+    margin-top: 0;
     margin-bottom: 10px;
     font-size: 24px;
     line-height: 32px;
@@ -1292,12 +1346,15 @@ template {
   }
   .recent__card {
     height: 350px;
+    width: 100%;
+    max-width: 100%;
     margin-bottom: 16px;
     padding: 20px;
   }
   .recent__annotation {
     font-size: 14px;
     line-height: 21px;
+    margin-bottom: 15px;
   }
   .recent__avatar {
     width: 36px;
@@ -1315,6 +1372,9 @@ template {
   .recent__data {
     font-size: 14px;
     line-height: 20px;
+  }
+  .card__title--recent {
+    margin-bottom: 15px;
   }
 }
 
@@ -1474,6 +1534,7 @@ template {
   }
   .popular__card {
     height: 320px;
+    width: 100%;
   }
   .card {
     width: 100%;
@@ -1492,6 +1553,7 @@ template {
   }
   .recent__card {
     height: 320px;
+    width: 100%;
   }
   .card {
     width: 100%;

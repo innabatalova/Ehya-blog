@@ -41,6 +41,7 @@
 
     &__card
       height: 500px
+      width: 65%
 
       &--left
         margin-right: 8px
@@ -49,6 +50,8 @@
 
     &__card
       height: 430px
+      width: 45%
+
       &--left
         margin-right: 15px
       &--middle
@@ -113,8 +116,8 @@
       height: 380px
 
     &__text
-      font-size: 11px
-      line-height: 24px
+      font-size: 15px
+      line-height: 32px
 
   .card
 
@@ -123,6 +126,56 @@
       margin-bottom: 10px
       font-size: 28px
       line-height: 35px
+
+  .recent
+
+    &__button
+      margin-top: 15px
+      top: 100%
+      left: 38%
+
+    &__card
+      height: 300px
+      padding: 16px
+
+    &__text
+      font-size: 15px
+      line-height: 32px
+
+    &__annotation
+      font-size: 11px
+      line-height: 24px
+      margin: 0
+
+    &__avatar
+      width: 30px
+      height: 30px
+      margin-right: 5px
+
+    &__username
+      font-size: 12px
+      line-height: 15px
+      margin-bottom: 0
+
+    &__status
+      font-size: 12px
+      line-height: 15px
+
+    &__icon
+      width: 14px
+      height: 14px
+      margin-right: 0
+
+    &__data
+      font-size: 12px
+      line-height: 15px
+
+  .card
+
+    &__title
+      font-size: 18px
+      line-height: 25px
+      margin: 0
 
 @media ( max-width: 768px )
   .container
@@ -248,8 +301,13 @@
 
     &__card
       height: 350px
+      width: 100%
       margin-bottom: 16px
       padding: 20px
+
+      &--left
+        margin-right: 0
+        margin-bottom: 16px
 
     &__avatar
       width: 36px
@@ -270,6 +328,7 @@
 
   .card
     flex-direction: column
+    width: 100%
 
     &__button
       top: 22px
@@ -292,7 +351,7 @@
       align-items: center
 
     &__title
-      margin-top: 35px
+      margin-top: 0
       margin-bottom: 10px
       font-size: 24px
       line-height: 32px
@@ -321,12 +380,15 @@
 
     &__card
       height: 350px
+      width: 100%
+      max-width: 100%
       margin-bottom: 16px
       padding: 20px
 
     &__annotation
       font-size: 14px
       line-height: 21px
+      margin-bottom: 15px
 
     &__avatar
       width: 36px
@@ -344,6 +406,12 @@
     &__data
       font-size: 14px
       line-height: 20px
+
+  .card
+
+    &__title
+      &--recent
+        margin-bottom: 15px
 
 @media ( max-width: 576px )
   .container
@@ -507,6 +575,7 @@
 
     &__card
       height: 320px
+      width: 100%
 
   .card
     width: 100%
@@ -528,6 +597,7 @@
 
     &__card
       height: 320px
+      width: 100%
 
   .card
     width: 100%
