@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Блог Ehya</title>
-    <link rel="stylesheet" href="css/style.css" />
+
     <link rel="stylesheet" href="sass/_normalize.scss" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:wght@700&display=swap"
       rel="stylesheet"
@@ -19,6 +20,7 @@
       type="image/x-icon"
     />
     <link rel="icon" href="image/favicon-main.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="header">
@@ -299,11 +301,11 @@
       <div class="container">
         <div class="articles recent-wrapper">
           <h2 class="articles__title recent__title">Последние Статьи</h2>
-          <!-- /.popular__title -->
+          <!-- /.recent__title -->
           <p class="articles__text recent__text">
             Вот чем мы занимались в последнее <span>время.</span>
           </p>
-          <!-- /.popular__text -->
+          <!-- /.recent__text -->
           <button class="articles__button recent__button">
             Смотреть все
             <img
@@ -312,7 +314,7 @@
               class="articles__arrow"
             />
           </button>
-          <!-- /.popular__button -->
+          <!-- /.recent__button -->
 
           <div class="card recent__wrapper">
             <div class="recent__card recent__card--left">
@@ -435,5 +437,206 @@
       </div>
     </section>
     <!-- /.recent -->
+
+    <section class="studies">
+      <div class="container">
+        <div class="articles studies-wrapper">
+          <h2 class="articles__title studies__title">Примеры из практики</h2>
+          <!-- /.studies__title -->
+          <p class="articles__text studies__text">
+            Вот чем мы занимались в последнее <span>время.</span>
+          </p>
+          <!-- /.studies__text -->
+          <button class="articles__button studies__button">
+            Смотреть все
+            <img
+              src="image/arrow-view.svg"
+              alt="arrow view icon"
+              class="articles__arrow"
+            />
+          </button>
+          <!-- /.studies__button -->
+          <!-- Slider main container -->
+          <div class="swiper-container studies-slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="offers-wrapper studies__wrapper">
+                  <img
+                    src="image/offers-img.png"
+                    alt="offers image"
+                    class="offers__image"
+                  />
+                  <div class="offers__message">
+                    <button class="button offers__button">Предложения</button>
+                    <!-- /.button -->
+                    <h2 class="offers__title">
+                      Дешевые Авиабилеты - Отличный Способ Сэкономить
+                    </h2>
+
+                    <p class="offers__info">
+                      В этом цифровом поколении, где информацию
+                      <span>можно легко получить за секунды, визитки ...</span>
+                    </p>
+                    <div class="author offers__wrapper">
+                      <img
+                        src="image/offers-avatar.png"
+                        alt="offer avatar"
+                        class="author__avatar offers__avatar"
+                      />
+                      <div class="author__uswrapper offers__uswrapper">
+                        <div class="author__namewrapper offers__namewrapper">
+                          <div class="author__ustext offers__ustext">
+                            <span class="author__username offers__username"
+                              >Viola Manisa</span
+                            >
+                            <div class="author__writer offers__writer">
+                              <img
+                                src="image/username-icon.svg"
+                                alt="icon user"
+                                class="author__icon offers__icon"
+                              />
+                              <span class="author__status offers__status"
+                                >Verified writer</span
+                              >
+                            </div>
+                          </div>
+                          <div>
+                            <span class="author__data offers__data"
+                              >02 May</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.offers__message -->
+                </div>
+                <!-- /.offers-wrappep -->
+              </div>
+              <div class="swiper-slide">
+                <div class="offers-wrapper studies__wrapper">
+                  <img
+                    src="image/offers-img.png"
+                    alt="offers image"
+                    class="offers__image"
+                  />
+                  <div class="offers__message">
+                    <button class="button offers__button">Предложения</button>
+                    <!-- /.button -->
+                    <h2 class="offers__title">Будущее Обучения</h2>
+
+                    <p class="offers__info">
+                      Постоянная способность учиться будет на самых важных
+                      навыках. ...
+                    </p>
+                    <div class="author offers__wrapper">
+                      <img
+                        src="image/recent-avatar-three.png"
+                        alt="recent avatar"
+                        class="author__avatar recent__avatar"
+                      />
+                      <div class="author__uswrapper offers__uswrapper">
+                        <div class="author__namewrapper offers__namewrapper">
+                          <div class="author__ustext offers__ustext">
+                            <span class="author__username offers__username"
+                              >Warren Casey</span
+                            >
+                            <div class="author__writer offers__writer">
+                              <img
+                                src="image/username-icon.svg"
+                                alt="icon user"
+                                class="author__icon offers__icon"
+                              />
+                              <span class="author__status offers__status"
+                                >Verified writer</span
+                              >
+                            </div>
+                          </div>
+                          <div>
+                            <span class="author__data offers__data"
+                              >02 May</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.offers__message -->
+                </div>
+                <!-- /.offers-wrappep -->
+              </div>
+              <div class="swiper-slide">
+                <div class="offers-wrapper studies__wrapper">
+                  <img
+                    src="image/offers-img.png"
+                    alt="offers image"
+                    class="offers__image"
+                  />
+                  <div class="offers__message">
+                    <button class="button offers__button">Предложения</button>
+                    <!-- /.button -->
+                    <h2 class="offers__title">Будущее Данных</h2>
+
+                    <p class="offers__info">
+                      Благодаря нескончаемым объемам данных и количеству
+                      инсайтов
+                    </p>
+                    <div class="author offers__wrapper">
+                      <img
+                        src="image/recent-avatar-two.png"
+                        alt="recent avatar"
+                        class="author__avatar recent__avatar"
+                      />
+                      <div class="author__uswrapper offers__uswrapper">
+                        <div class="author__namewrapper offers__namewrapper">
+                          <div class="author__ustext offers__ustext">
+                            <span class="author__username offers__username"
+                              >Tyler Murray</span
+                            >
+                            <div class="author__writer offers__writer">
+                              <img
+                                src="image/username-icon.svg"
+                                alt="icon user"
+                                class="author__icon offers__icon"
+                              />
+                              <span class="author__status offers__status"
+                                >Verified writer</span
+                              >
+                            </div>
+                          </div>
+                          <div>
+                            <span class="author__data offers__data"
+                              >02 May</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.offers__message -->
+                </div>
+                <!-- /.offers-wrappep -->
+              </div>
+              ...
+            </div>
+            <!-- If we need pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.studies -->
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -996,6 +996,11 @@ template {
   margin-bottom: 12px;
 }
 
+.studies-slider {
+  width: 100%;
+  height: 100%;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
