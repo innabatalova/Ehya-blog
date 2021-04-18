@@ -127,6 +127,10 @@ select {
 }
 
 .articles__title {
+  font-size: 36px;
+  line-height: 48px;
+  margin-top: 96px;
+  margin-bottom: 16px;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -139,6 +143,11 @@ select {
   font-style: normal;
   font-weight: normal;
   color: #5A7184;
+  max-width: 670px;
+  margin-top: 0;
+  margin-bottom: 48px;
+  font-size: 18px;
+  line-height: 32px;
 }
 
 .articles__button {
@@ -148,6 +157,10 @@ select {
   color: #1565D8;
   border: 2px solid #1565D8;
   background-color: #ffffff;
+  position: absolute;
+  padding: 10px 20px;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .articles__arrow {
@@ -157,6 +170,80 @@ select {
 .card {
   display: flex;
   justify-content: space-between;
+}
+
+.practice {
+  position: relative;
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #E5EAF4;
+  box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.03);
+  z-index: 2;
+}
+
+.practice__image {
+  max-width: 50%;
+  object-fit: cover;
+}
+
+.practice__message {
+  padding: 32px 48px 32px 32px;
+}
+
+.practice__button {
+  padding: 6px 12px;
+  margin-bottom: 16px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: #36B37E 0.01;
+  border: none;
+}
+
+.practice__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 31px;
+  line-height: 48px;
+  color: #183B56;
+}
+
+.practice__info {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-bottom: 43px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #5A7184;
+}
+
+.swiper-button-prev {
+  width: 56px;
+  z-index: 99;
+}
+
+.swiper-button-prev:after {
+  content: '';
+}
+
+.swiper-button-next {
+  position: absolute;
+  width: 56px;
+  z-index: 99;
+}
+
+.swiper-button-next:after {
+  content: '';
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -730,61 +817,8 @@ template {
   margin-top: -90px;
 }
 
-.offers-wrapper {
-  position: relative;
-  display: flex;
-  background-color: #ffffff;
-  border-radius: 16px;
-  border: 1px solid #E5EAF4;
-  box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.03);
-  z-index: 2;
-}
-
-.offers__image {
-  max-width: 50%;
-  object-fit: cover;
-}
-
-.offers__message {
-  padding: 32px 48px 32px 32px;
-}
-
 .offers__button {
-  padding: 6px 12px;
-  margin-bottom: 16px;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 20px;
-  background-color: #36B37E 0.01;
   color: #36B37E;
-  border: none;
-  text-transform: uppercase;
-}
-
-.offers__title {
-  margin: 0;
-  margin-bottom: 20px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 31px;
-  line-height: 48px;
-  color: #183B56;
-}
-
-.offers__info {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  margin-bottom: 43px;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 32px;
-  color: #5A7184;
 }
 
 .offers__username {
@@ -895,21 +929,6 @@ template {
   color: #ffffff;
 }
 
-.recent__title {
-  font-size: 36px;
-  line-height: 48px;
-  margin-top: 96px;
-  margin-bottom: 16px;
-}
-
-.recent__text {
-  max-width: 670px;
-  margin-top: 0;
-  margin-bottom: 48px;
-  font-size: 18px;
-  line-height: 32px;
-}
-
 .recent__button {
   position: absolute;
   padding: 10px 20px;
@@ -955,7 +974,7 @@ template {
 }
 
 .recent__card--middle {
-  background: url(../image/recent-bg-two.png);
+  background: url(../image/recent-bg-two.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   object-fit: cover;
@@ -963,7 +982,7 @@ template {
 }
 
 .recent__card--right {
-  background: url(../image/recent-bg-one.png);
+  background: url(../image/recent-bg-one.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   object-fit: cover;
@@ -996,9 +1015,81 @@ template {
   margin-bottom: 12px;
 }
 
+.studies {
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+.studies__wrapper {
+  position: relative;
+  display: flex;
+}
+
+.studies-wrapper {
+  border-radius: 16px;
+  height: 380px;
+  overflow: hidden;
+}
+
+.studies__button {
+  right: 10px;
+  top: 150px;
+  color: #1565D8;
+}
+
+.studies__button-prev {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  background-color: #1565D8;
+  border-radius: 50%;
+  background-image: url(../image/slider-arrow-prev.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  left: 162px;
+}
+
+.studies__button-next {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  background-color: #1565D8;
+  border-radius: 50%;
+  background-image: url(../image/slider-arrow-next.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  right: 162px;
+}
+
 .studies-slider {
   width: 100%;
-  height: 100%;
+  height: 380px;
+}
+
+.studies__image-two {
+  width: 60%;
+  object-fit: cover;
+}
+
+.studies__image-three {
+  width: 60%;
+  object-fit: cover;
+}
+
+.studies__username {
+  color: #183B56;
+}
+
+.studies__title-two {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.studies__title-three {
+  margin-top: 40px;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 1200px) {
