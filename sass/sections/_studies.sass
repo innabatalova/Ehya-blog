@@ -1,6 +1,5 @@
 .studies
   margin-bottom: 50px
-  overflow: hidden
 
   &__wrapper
     position: relative
@@ -12,33 +11,9 @@
     overflow: hidden
 
   &__button
-    right: 10px
-    top: 150px
+    right: 13%
+    top: 50px
     color: $button-color
-
-    &-prev
-      position: absolute
-      width: 56px
-      height: 56px
-      background-color: $button-color
-      border-radius: 50%
-      background-image: url(../image/slider-arrow-prev.svg)
-      background-repeat: no-repeat
-      background-position: center
-      border: none
-      left: 162px
-
-    &-next
-      position: absolute
-      width: 56px
-      height: 56px
-      background-color: $button-color
-      border-radius: 50%
-      background-image: url(../image/slider-arrow-next.svg)
-      background-repeat: no-repeat
-      background-position: center
-      border: none
-      right: 162px
 
   &-slider
     width: 100%
@@ -63,3 +38,39 @@
     &-three
       margin-top: 40px
       margin-bottom: 30px
+
+.slider
+
+  &-wrapper
+    position: relative
+
+  &__button
+    right: 10px
+    top: 50px
+    color: $button-color
+
+    &-prev
+      position: absolute
+      width: 56px
+      height: 56px
+      background-color: $button-color
+      border-radius: 50%
+      background-image: url(../image/slider-arrow-prev.svg)
+      background-repeat: no-repeat
+      background-position: center
+      border: none
+      left: 162px
+      top: 60%
+
+    &-next
+      position: absolute
+      width: 56px
+      height: 56px
+      background-color: $button-color
+      border-radius: 50%
+      background-image: url(../image/slider-arrow-next.svg)
+      background-repeat: no-repeat
+      background-position: center
+      border: none
+      right: 162px
+      top: 60%
