@@ -1180,7 +1180,7 @@ template {
   z-index: -2;
 }
 
-.all__card--bottommobile {
+.all__card--mobile {
   display: none;
   background: url(../image/all-bottomright.png);
   background-repeat: no-repeat;
@@ -1276,6 +1276,15 @@ template {
     font-size: 24px;
     line-height: 36px;
   }
+  .card__title--topleft, .card__title--topright {
+    font-size: 24px;
+    line-height: 36px;
+    margin: 0;
+  }
+  .card__title--bottomleft, .card__title--bottommiddle, .card__title--bottomright {
+    font-size: 18px;
+    line-height: 26px;
+  }
   .studies__button {
     right: 9%;
   }
@@ -1311,6 +1320,22 @@ template {
   }
   .slider-button-next {
     right: 5%;
+  }
+  .all__card--topleft, .all__card--topright {
+    height: 400px;
+    max-width: 465px;
+  }
+  .all__card--bottomleft, .all__card--bottommiddle, .all__card--bottomright {
+    height: 400px;
+    max-width: 290px;
+    padding: 40px 20px;
+  }
+  .all__annotation--bottomleft, .all__annotation--bottommiddle, .all__annotation--bottomright {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-size: 15px;
+    line-height: 20px;
   }
 }
 
@@ -1358,11 +1383,15 @@ template {
     font-size: 15px;
     line-height: 32px;
   }
-  .card__title {
+  .card__title--popular {
     margin-top: 35px;
     margin-bottom: 10px;
-    font-size: 28px;
-    line-height: 35px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .card__title--left {
+    margin-top: 0;
+    margin-bottom: 35px;
   }
   .recent__button {
     margin-top: 15px;
@@ -1381,6 +1410,9 @@ template {
     font-size: 11px;
     line-height: 24px;
     margin: 0;
+  }
+  .recent__annotation--right {
+    margin-bottom: 23px;
   }
   .recent__avatar {
     width: 30px;
@@ -1405,10 +1437,20 @@ template {
     font-size: 12px;
     line-height: 15px;
   }
-  .card__title {
+  .card__title--recent {
     font-size: 18px;
     line-height: 25px;
     margin: 0;
+  }
+  .card__title--topleft {
+    margin-bottom: 30px;
+  }
+  .card__title--topright, .card__title--bottomleft, .card__title--bottommiddle {
+    margin-bottom: 8px;
+  }
+  .card__title--bottomright {
+    margin-top: 0;
+    margin-bottom: 30px;
   }
   .studies__button {
     top: 540px;
@@ -1428,6 +1470,39 @@ template {
   }
   .studies__image-three {
     width: 75%;
+  }
+  .all__card--topleft, .all__card--topright {
+    height: 400px;
+    max-width: 330px;
+    padding: 20px 30px 20px;
+  }
+  .all__card--bottomleft, .all__card--bottommiddle, .all__card--bottomright {
+    height: 400px;
+    max-width: 230px;
+  }
+  .all__avatar--bottomleft, .all__avatar--bottommiddle, .all__avatar--bottomright {
+    width: 30px;
+    height: 30px;
+  }
+  .all__ustext--bottomleft, .all__ustext--bottommiddle, .all__ustext--bottomright {
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 0;
+  }
+  .all__username--bottomleft, .all__username--bottommiddle, .all__username--bottomright {
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 0;
+  }
+  .all__status--bottomleft, .all__status--bottommiddle, .all__status--bottomright {
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 0;
+  }
+  .all__data--bottomleft, .all__data--bottommiddle, .all__data--bottomright {
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 0;
   }
 }
 
@@ -1695,6 +1770,32 @@ template {
     flex-direction: column;
     align-items: center;
   }
+  .all__title {
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .all__text {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 24px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .all__card {
+    height: 350px;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 16px;
+    padding: 20px;
+    background-size: 100%;
+  }
+  .button-wrapper {
+    margin-top: 30px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1950,6 +2051,13 @@ template {
     width: 40px;
     height: 40px;
     right: 2%;
+  }
+  .all__card {
+    height: 320px;
+  }
+  .all__card--mobile {
+    justify-content: flex-end;
+    display: flex;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -69,6 +69,15 @@
         font-size: 24px
         line-height: 36px
 
+      &--topleft, &--topright
+        font-size: 24px
+        line-height: 36px
+        margin: 0
+
+      &--bottomleft, &--bottommiddle, &--bottomright
+        font-size: 18px
+        line-height: 26px
+
   .studies
 
     &__button
@@ -110,6 +119,28 @@
 
       &-next
         right: 5%
+
+  .all
+
+    &__card
+
+      &--topleft, &--topright
+        height: 400px
+        max-width: 465px
+
+      &--bottomleft, &--bottommiddle, &--bottomright
+        height: 400px
+        max-width: 290px
+        padding: 40px 20px
+
+    &__annotation
+
+      &--bottomleft, &--bottommiddle, &--bottomright
+        display: block
+        margin-bottom: 10px
+        margin-top: 5px
+        font-size: 15px
+        line-height: 20px
 
 @media ( max-width: 992px )
   .container
@@ -164,10 +195,16 @@
   .card
 
     &__title
-      margin-top: 35px
-      margin-bottom: 10px
-      font-size: 28px
-      line-height: 35px
+
+      &--popular
+        margin-top: 35px
+        margin-bottom: 10px
+        font-size: 20px
+        line-height: 28px
+
+      &--left
+        margin-top: 0
+        margin-bottom: 35px
 
   .recent
 
@@ -188,6 +225,9 @@
       font-size: 11px
       line-height: 24px
       margin: 0
+
+      &--right
+        margin-bottom: 23px
 
     &__avatar
       width: 30px
@@ -215,9 +255,21 @@
   .card
 
     &__title
-      font-size: 18px
-      line-height: 25px
-      margin: 0
+
+      &--recent
+        font-size: 18px
+        line-height: 25px
+        margin: 0
+
+      &--topleft
+        margin-bottom: 30px
+
+      &--topright, &--bottomleft, &--bottommiddle
+        margin-bottom: 8px
+
+      &--bottomright
+        margin-top: 0
+        margin-bottom: 30px
 
   .studies
 
@@ -237,6 +289,49 @@
         width: 75%
       &-three
         width: 75%
+
+  .all
+
+    &__card
+
+      &--topleft, &--topright
+        height: 400px
+        max-width: 330px
+        padding: 20px 30px 20px
+
+      &--bottomleft, &--bottommiddle, &--bottomright
+        height: 400px
+        max-width: 230px
+
+    &__avatar
+
+      &--bottomleft, &--bottommiddle, &--bottomright
+        width: 30px
+        height: 30px
+
+    &__ustext
+      &--bottomleft, &--bottommiddle, &--bottomright
+        font-size: 12px
+        line-height: 15px
+        margin-bottom: 0
+
+    &__username
+      &--bottomleft, &--bottommiddle, &--bottomright
+        font-size: 12px
+        line-height: 15px
+        margin-bottom: 0
+
+    &__status
+      &--bottomleft, &--bottommiddle, &--bottomright
+        font-size: 12px
+        line-height: 15px
+        margin-bottom: 0
+
+    &__data
+      &--bottomleft, &--bottommiddle, &--bottomright
+        font-size: 12px
+        line-height: 15px
+        margin-bottom: 0
 
 @media ( max-width: 768px )
   .container
@@ -521,6 +616,36 @@
     flex-direction: column
     align-items: center
 
+  .all
+
+    &__title
+      margin-top: 100px
+      margin-bottom: 10px
+      font-size: 24px
+      line-height: 32px
+
+    &__text
+      display: flex
+      flex-direction: column
+      padding: 0 10px
+      font-size: 14px
+      line-height: 24px
+      align-items: center
+      margin-bottom: 20px
+
+    &__card
+      height: 350px
+      width: 100%
+      max-width: 100%
+      margin-bottom: 16px
+      padding: 20px
+      background-size: 100%
+
+  .button
+
+    &-wrapper
+      margin-top: 30px
+
 @media ( max-width: 576px )
   .container
     max-width: 90%
@@ -789,3 +914,12 @@
         width: 40px
         height: 40px
         right: 2%
+
+  .all
+
+    &__card
+      height: 320px
+
+      &--mobile
+        justify-content: flex-end
+        display: flex
