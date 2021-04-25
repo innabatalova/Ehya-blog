@@ -13,8 +13,8 @@ const studiesSlider = new Swiper('.studies-slider', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.slider__button-next',
-    prevEl: '.slider__button-prev',
+    nextEl: '.slider-button-next',
+    prevEl: '.slider-button-prev',
   },
 
  

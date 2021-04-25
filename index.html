@@ -208,7 +208,7 @@
             короткими и длинными историями команды, стоящей за компанией.
           </p>
           <!-- /.popular__text -->
-          <button class="articles__button popular__button">
+          <button class="articles-button popular__button">
             Смотреть все
             <img
               src="image/arrow-view.svg"
@@ -308,12 +308,12 @@
             Вот чем мы занимались в последнее <span>время.</span>
           </p>
           <!-- /.recent__text -->
-          <button class="articles__button recent__button">
+          <button class="articles-button recent__button">
             Смотреть все
             <img
               src="image/arrow-view.svg"
               alt="arrow view icon"
-              class="articles__arrow"
+              class="articles-arrow"
             />
           </button>
           <!-- /.recent__button -->
@@ -442,7 +442,7 @@
 
     <section class="studies">
       <div class="slider-wrapper">
-        <button class="swiper-button-prev slider__button-prev"></button>
+        <button class="swiper-button-prev slider-button-prev"></button>
         <div class="container">
           <div class="articles">
             <h2 class="articles__title studies-title">Примеры из практики</h2>
@@ -452,12 +452,12 @@
             </p>
             <!-- /.studies__text -->
           </div>
-          <button class="articles__button studies__button">
+          <button class="articles-button studies__button">
             Смотреть все
             <img
               src="image/arrow-view.svg"
               alt="arrow view icon"
-              class="articles__arrow"
+              class="articles-arrow"
             />
           </button>
           <!-- /.studies__button -->
@@ -655,7 +655,7 @@
             </div>
           </div>
         </div>
-        <button class="swiper-button-next slider__button-next"></button>
+        <button class="swiper-button-next slider-button-next"></button>
       </div>
     </section>
     <!-- /.studies -->
@@ -670,7 +670,7 @@
           </p>
           <!-- /.all__text -->
 
-          <div class="card all__wrapper">
+          <div class="card all-wrapper">
             <div class="all__card all__card--topleft">
               <button class="button card__button">ПРЕДЛОЖЕНИЯ</button>
               <h2 class="card__title card__title--left">
@@ -744,166 +744,176 @@
                 </div>
               </div>
             </div>
+            <div class="all__card all__card--bottomleft">
+              <h2 class="card__title card__title--all card__title--bottomleft">
+                Будущее Работы
+              </h2>
+              <p class="all__annotation all__annotation--bottomleft">
+                Большинство людей будут работать на рабочих местах, которых
+                сегодня не существует.
+              </p>
+              <div class="author all__author">
+                <img
+                  src="image/recent-avatar-one.png"
+                  alt="recent avatar"
+                  class="author__avatar all__avatar"
+                />
+                <div class="author__uswrapper all__uswrapper">
+                  <div class="author__namewrapper all__namewrapper">
+                    <div class="author__ustext all__ustext">
+                      <span class="author__username all__username"
+                        >Lina Hicks</span
+                      >
+                      <div class="author__writer all__writer">
+                        <img
+                          src="image/username-icon.svg"
+                          alt="icon user"
+                          class="author__icon all__icon"
+                        />
+                        <span class="author__status all__status"
+                          >Verified writer</span
+                        >
+                      </div>
+                    </div>
+                    <div>
+                      <span class="author__data all__data">02 May</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="all__card all__card--bottommiddle">
+              <h2
+                class="card__title card__title--all card__title--bottommiddle"
+              >
+                Будущее Данных
+              </h2>
+              <p class="all__annotation all__annotation--bottommiddle">
+                Благодаря нескончаемым
+                <span>объемам данных и количеству инсайтов</span>
+              </p>
+              <div class="author all__author">
+                <img
+                  src="image/recent-avatar-two.png"
+                  alt="recent avatar"
+                  class="author__avatar all__avatar"
+                />
+                <div class="author__uswrapper all__uswrapper">
+                  <div class="author__namewrapper all__namewrapper">
+                    <div class="author__ustext all__ustext">
+                      <span class="author__username all__username"
+                        >Tyler Murray</span
+                      >
+                      <div class="author__writer all__writer">
+                        <img
+                          src="image/username-icon.svg"
+                          alt="icon user"
+                          class="author__icon all__icon"
+                        />
+                        <span class="author__status all__status"
+                          >Verified writer</span
+                        >
+                      </div>
+                    </div>
+                    <div>
+                      <span class="author__data all__data">02 May</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="all__card all__card--bottomright">
+              <h2 class="card__title card__title--all card__title--bottomright">
+                Будущее Обучения
+              </h2>
+              <p class="all__annotation all__annotation--bottomright">
+                Постоянная способность учиться будет на самых важных
+                <span>навыках.</span>
+              </p>
+              <div class="author all__author">
+                <img
+                  src="image/recent-avatar-three.png"
+                  alt="all avatar"
+                  class="author__avatar all__avatar"
+                />
+                <div class="author__uswrapper all__uswrapper">
+                  <div class="author__namewrapper all__namewrapper">
+                    <div class="author__ustext all__ustext">
+                      <span class="author__username all__username"
+                        >Warren Casey</span
+                      >
+                      <div class="author__writer all__writer">
+                        <img
+                          src="image/username-icon.svg"
+                          alt="icon user"
+                          class="author__icon all__icon"
+                        />
+                        <span class="author__status all__status"
+                          >Verified writer</span
+                        >
+                      </div>
+                    </div>
+                    <div>
+                      <span class="author__data all__data">02 May</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="all__card all__card--bottommobile">
+              <h2
+                class="card__title card__title--all card__title--bottommobile"
+              >
+                Будущее Обучения
+              </h2>
+              <p class="all__annotation all__annotation--bottommobile">
+                Постоянная способность учиться будет на самых важных навыках.
+              </p>
+              <div class="author all__author">
+                <img
+                  src="image/recent-avatar-three.png"
+                  alt="all avatar"
+                  class="author__avatar all__avatar"
+                />
+                <div class="author__uswrapper all__uswrapper">
+                  <div class="author__namewrapper all__namewrapper">
+                    <div class="author__ustext all__ustext">
+                      <span class="author__username all__username"
+                        >Warren Casey</span
+                      >
+                      <div class="author__writer all__writer">
+                        <img
+                          src="image/username-icon.svg"
+                          alt="icon user"
+                          class="author__icon all__icon"
+                        />
+                        <span class="author__status all__status"
+                          >Verified writer</span
+                        >
+                      </div>
+                    </div>
+                    <div>
+                      <span class="author__data all__data">02 May</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <!-- /.all__card -->
         </div>
-        <div class="all__card all__card--bottomleft">
-          <h2 class="card__title card__title--all card__title--bottomleft">
-            Будущее Работы
-          </h2>
-          <p class="all__annotation all__annotation--bottomleft">
-            Большинство людей будут работать на рабочих местах, которых сегодня
-            не существует.
-          </p>
-          <div class="author all__author">
-            <img
-              src="image/recent-avatar-one.png"
-              alt="recent avatar"
-              class="author__avatar recent__avatar"
-            />
-            <div class="author__uswrapper all__uswrapper">
-              <div class="author__namewrapper all__namewrapper">
-                <div class="author__ustext all__ustext">
-                  <span class="author__username all__username">Lina Hicks</span>
-                  <div class="author__writer all__writer">
-                    <img
-                      src="image/username-icon.svg"
-                      alt="icon user"
-                      class="author__icon all__icon"
-                    />
-                    <span class="author__status all__status"
-                      >Verified writer</span
-                    >
-                  </div>
-                </div>
-                <div>
-                  <span class="author__data all__data">02 May</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="all__card all__card--bottommiddle">
-          <h2 class="card__title card__title--all card__title--bottommiddle">
-            Будущее Данных
-          </h2>
-          <p class="all__annotation all__annotation--bottommiddle">
-            Благодаря нескончаемым объемам данных и количеству инсайтов
-          </p>
-          <div class="author all__author">
-            <img
-              src="image/recent-avatar-two.png"
-              alt="recent avatar"
-              class="author__avatar recent__avatar"
-            />
-            <div class="author__uswrapper all__uswrapper">
-              <div class="author__namewrapper all__namewrapper">
-                <div class="author__ustext all__ustext">
-                  <span class="author__username all__username"
-                    >Tyler Murray</span
-                  >
-                  <div class="author__writer all__writer">
-                    <img
-                      src="image/username-icon.svg"
-                      alt="icon user"
-                      class="author__icon all__icon"
-                    />
-                    <span class="author__status all__status"
-                      >Verified writer</span
-                    >
-                  </div>
-                </div>
-                <div>
-                  <span class="author__data all__data">02 May</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="all__card all__card--bottomright">
-          <h2 class="card__title card__title--all card__title--bottomright">
-            Будущее Обучения
-          </h2>
-          <p class="all__annotation all__annotation--bottomright">
-            Постоянная способность учиться будет на самых важных навыках.
-          </p>
-          <div class="author all__author">
-            <img
-              src="image/recent-avatar-three.png"
-              alt="all avatar"
-              class="author__avatar all__avatar"
-            />
-            <div class="author__uswrapper all__uswrapper">
-              <div class="author__namewrapper all__namewrapper">
-                <div class="author__ustext all__ustext">
-                  <span class="author__username all__username"
-                    >Warren Casey</span
-                  >
-                  <div class="author__writer all__writer">
-                    <img
-                      src="image/username-icon.svg"
-                      alt="icon user"
-                      class="author__icon all__icon"
-                    />
-                    <span class="author__status all__status"
-                      >Verified writer</span
-                    >
-                  </div>
-                </div>
-                <div>
-                  <span class="author__data all__data">02 May</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="all__card all__card--bottommobile">
-          <h2 class="card__title card__title--all card__title--bottommobile">
-            Будущее Обучения
-          </h2>
-          <p class="all__annotation all__annotation--bottommobile">
-            Постоянная способность учиться будет на самых важных навыках.
-          </p>
-          <div class="author all__author">
-            <img
-              src="image/recent-avatar-three.png"
-              alt="all avatar"
-              class="author__avatar all__avatar"
-            />
-            <div class="author__uswrapper all__uswrapper">
-              <div class="author__namewrapper all__namewrapper">
-                <div class="author__ustext all__ustext">
-                  <span class="author__username all__username"
-                    >Warren Casey</span
-                  >
-                  <div class="author__writer all__writer">
-                    <img
-                      src="image/username-icon.svg"
-                      alt="icon user"
-                      class="author__icon all__icon"
-                    />
-                    <span class="author__status all__status"
-                      >Verified writer</span
-                    >
-                  </div>
-                </div>
-                <div>
-                  <span class="author__data all__data">02 May</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <button class="articles__button all__button">
-          Смотреть все
-          <img
-            src="image/arrow-view.svg"
-            alt="arrow view icon"
-            class="popular__arrow"
-          />
-        </button>
-        <!-- /.all__button -->
+        <div class="button-wrapper">
+          <button class="articles-button all__button">
+            Больше постов
+            <img
+              src="image/arrow-view.svg"
+              alt="arrow view icon"
+              class="articles-arrow"
+            />
+          </button>
+          <!-- /.all__button -->
+        </div>
       </div>
     </section>
     <!-- /.all -->

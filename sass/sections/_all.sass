@@ -1,0 +1,107 @@
+.all
+
+  &-wrapper
+    flex-wrap: wrap
+
+  &__card
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    border-radius: 16px
+
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      background: linear-gradient(180deg, rgba(24, 59, 86, 0.0001) 0%, #152532 100%)
+      border-radius: 16px
+      z-index: -1
+
+    &--topleft
+      background: url(../image/all-topleft.png)
+      background-repeat: no-repeat
+      object-fit: cover
+      max-width: 555px
+      height: 600px
+      padding: 40px 50px 40px
+      margin-bottom: 30px
+      z-index: -2
+
+    &--topright
+      background: url(../image/all-topright.png)
+      background-repeat: no-repeat
+      object-fit: cover
+      max-width: 555px
+      height: 600px
+      padding: 40px 50px 40px
+      margin-bottom: 30px
+      z-index: -2
+
+    &--bottomleft
+      background: url(../image/all-bottomleft.png)
+      background-repeat: no-repeat
+      object-fit: cover
+      max-width: 360px
+      height: 500px
+      padding: 40px 32px
+      z-index: -2
+
+    &--bottommiddle
+      background: url(../image/all-bottommiddle.png)
+      background-repeat: no-repeat
+      object-fit: cover
+      max-width: 360px
+      height: 500px
+      padding: 40px 32px
+      z-index: -2
+
+    &--bottomright
+      background: url(../image/all-bottomright.png)
+      background-repeat: no-repeat
+      object-fit: cover
+      max-width: 360px
+      height: 500px
+      padding: 40px 32px
+      z-index: -2
+
+    &--bottommobile
+      display: none
+      background: url(../image/all-bottomright.png)
+      background-repeat: no-repeat
+      object-fit: cover
+      max-width: 360px
+      height: 500px
+      padding: 40px 32px
+      z-index: -2
+
+  &__annotation
+
+    &--bottommiddle, &--bottomright
+      display: flex
+      flex-direction: column
+
+  &__button
+    display: flex
+
+.card
+
+  &__title
+
+    &--bottomleft, &--bottommiddle, &--bottomright
+      font-family: Roboto
+      font-style: normal
+      font-weight: bold
+      font-size: 28px
+      line-height: 36px
+      margin-bottom: 12px
+
+.button
+
+  &-wrapper
+    display: flex
+    justify-content: center
+    margin-top: 48px
