@@ -1215,6 +1215,10 @@ template {
   margin-top: 48px;
 }
 
+.footer {
+  background-color: #1A3245;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
