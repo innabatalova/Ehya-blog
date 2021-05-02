@@ -1,2 +1,182 @@
 .footer
+  position: relative
   background-color: $footer-color
+  margin-top: 70px
+  z-index: -2
+
+  &-contact
+    &-wrapper
+      position: relative
+      display: flex
+      justify-content: space-between
+      padding-top: 175px
+
+  &__contact
+    &-form
+      display: flex
+      flex-direction: column
+      width: 555px
+
+  &-title
+    font-family: Roboto
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 48px
+    margin-bottom: 48px
+    margin-top: 70px
+
+  &__input
+    width: 320px
+    font-family: Open Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 22px
+    color: $light
+    padding: 17px
+    border-radius: 8px
+
+  &__button
+    background-color: $button-color
+    font-family: Open Sans
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 25px
+    color: #FFFFFF
+    border: none
+    padding: 16px 48px
+
+  &__info
+    font-family: Open Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 28px
+    color: $light
+    margin: 0
+    margin-top: 25px
+
+  &-offers
+    position: relative
+    background-color: #FFFFFF
+    width: 470px
+    height: 390px
+    padding: 8px
+    border-radius: 16px
+
+    &:before
+      content: ''
+      position: absolute
+      left: -61px
+      top: 240px
+      width: 240px
+      height: 200px
+      background-color: #FFFFFF
+      opacity: 0.06
+      border-radius: 16px
+      z-index: -1
+
+    &:after
+      content: ''
+      position: absolute
+      right: -58px
+      top: 53px
+      width: 240px
+      height: 200px
+      background-color: $button-color
+      border-radius: 16px
+      z-index: -1
+
+    &__image
+      border-radius: 12px
+      width: 450px
+      height: 212px
+      object-fit: cover
+
+    &__title
+      font-family: Roboto
+      font-style: normal
+      font-weight: bold
+      font-size: 24px
+      line-height: 32px
+      color: $dark-roboto
+      margin-top: 28px
+      margin-left: 32px
+      margin-bottom: 12px
+
+    &__info
+      display: flex
+      flex-direction: column
+      font-family: Open Sans
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 32px
+      color: $light
+      margin: 0
+      margin-left: 32px
+
+  &__row
+    color: #FFFFFF
+    opacity: 0.06
+    margin-top: 140px
+
+  &-bottom
+    display: flex
+    margin-top: 130px
+
+  &__logo
+    margin-bottom: 30px
+
+  &__icon
+    width: 21px
+    height: 21px
+    margin-right: 24px
+
+    &-wrapper
+      display: flex
+      flex-direction: column
+
+  &__text
+    display: flex
+    flex-direction: column
+    font-family: Open Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 15px
+    line-height: 28px
+    color: $light
+    margin-right: 50px
+    margin-bottom: 32px
+
+  &-list
+    &-wrapper
+      display: flex
+      flex-direction: column
+
+    &-over
+      margin-left: -30px
+
+  &__subtitle
+    margin-right: 115px
+    margin-top: 0
+    margin-bottom: 30px
+    font-family: Open Sans
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 25px
+    color: $light
+
+  &__listing
+    display: flex
+    flex-direction: column
+    margin-bottom: 25px
+    font-family: Open Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 22px
+    color: #959EAD

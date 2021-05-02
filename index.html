@@ -950,12 +950,12 @@
             <h1 class="footer-title">
               Получите наши истории на ваш почтовый ящик еженедельно.
             </h1>
-            <form
-              action="send.php"
-              class="footer__form"
-              placeholder="Ваш Email"
-            >
-              <input type="text" class="footer__input" />
+            <form action="send.php" class="footer__form">
+              <input
+                type="text"
+                class="footer__input"
+                placeholder="Ваш Email"
+              />
               <button class="button footer__button">Начать</button>
             </form>
             <p class="footer__info">
@@ -965,26 +965,37 @@
             </p>
           </div>
           <!-- /.footer__contact-form -->
+          
           <div class="footer-offers">
-            <img src="" alt="footer-offers" class="footer-offers__image" />
+            <img
+              src="image/footer-offers.jpg"
+              alt="footer-offers"
+              class="footer-offers__image"
+            />
             <h2 class="footer-offers__title">Лучшие статьи каждую неделю</h2>
             <span class="footer-offers__info"
-              >Наши предложения по страхованию везде одинаковы.</span
+              >Наши предложения по страхованию
+              <span>везде одинаковы.</span></span
             >
           </div>
           <!-- /.footer-offers -->
         </div>
-        <div class="footer__icon-wrapper">
-          <a href="" class="footer__logo"></a>
+        <hr class="footer__row"></hr>
+        <div class="footer-bottom">
+          <div class="footer__icon-wrapper">
+          <a href="https://innabatalova.ru/Ehya-blog/" class="footer__logo">
+            <img src="image/footer-logo.png" alt="footer logo">
+          </a>
+          
           <span class="footer__text"
-            >Создайте современный и креативный веб-сайт с crealand</span
+            >Создайте современный <span> и креативный веб-сайт с crealand</span></span
           >
           <div class="icon-wrapper">
-            <img src="" alt="" class="footer__icon" />
-            <img src="" alt="" class="footer__icon" />
-            <img src="" alt="" class="footer__icon" />
-            <img src="" alt="" class="footer__icon" />
-            <img src="" alt="" class="footer__icon" />
+            <img src="image/google.svg" alt="google icon" class="footer__icon" />
+            <img src="image/twitter.svg" alt="twitter icon" class="footer__icon" />
+            <img src="image/instagram.svg" alt="instagram icon" class="footer__icon" />
+            <img src="image/linkedin.svg" alt="linkedin icon" class="footer__icon" />
+            <img src="image/youtube.svg" alt="youtube icon" class="footer__icon" />
           </div>
         </div>
         <div class="footer-list-wrapper">
@@ -1013,10 +1024,10 @@
 
           <span class="footer__listing">Условия</span>
 
-          <span class="footer__listing">Политика конфиденциальности </span>
+          <span class="footer__listing">Политика <span>конфиденциальности</span></span>
           <span class="footer__listing">Careers</span>
         </div>
-        <div class="footer-list-wrapper">
+        <div class="footer-list-wrapper footer-list-over">
           <h3 class="footer__subtitle">Более</h3>
 
           <span class="footer__listing">Документация</span>
@@ -1025,6 +1036,7 @@
           <span class="footer__listing">Изменения</span>
         </div>
         <!-- /.footer-list-wrapper -->
+        </div>
         <div class="footer-cory">
           <img src="" alt="footer like" class="footer__like" />
           <span class="footer-copy-text">Copyright © 2019. </span>
