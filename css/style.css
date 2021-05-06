@@ -1219,7 +1219,7 @@ template {
   position: relative;
   background-color: #1A3245;
   margin-top: 70px;
-  z-index: -2;
+  padding-bottom: 85px;
 }
 
 .footer-contact-wrapper {
@@ -1355,6 +1355,7 @@ template {
 .footer-bottom {
   display: flex;
   margin-top: 130px;
+  margin-bottom: 96px;
 }
 
 .footer__logo {
@@ -1416,6 +1417,48 @@ template {
   font-size: 16px;
   line-height: 22px;
   color: #959EAD;
+}
+
+.footer-copy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-copy-text {
+  display: block;
+  margin-right: 3px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #5A7184;
+}
+
+.footer__like {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: auto;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #1565D8;
+  background-repeat: no-repeat;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.footer__likeicon {
+  margin-right: 0;
+  width: 24px;
+  height: 28px;
+}
+
+.footer__subinfo {
+  display: flex;
 }
 
 @media (max-width: 1200px) {

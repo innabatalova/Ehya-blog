@@ -2,7 +2,7 @@
   position: relative
   background-color: $footer-color
   margin-top: 70px
-  z-index: -2
+  padding-bottom: 85px
 
   &-contact
     &-wrapper
@@ -126,6 +126,7 @@
   &-bottom
     display: flex
     margin-top: 130px
+    margin-bottom: 96px
 
   &__logo
     margin-bottom: 30px
@@ -180,3 +181,40 @@
     font-size: 16px
     line-height: 22px
     color: #959EAD
+
+  &-copy
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+
+    &-text
+      display: block
+      margin-right: 3px
+      font-family: Open Sans
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      color: $light
+
+  &__like
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: auto
+    width: 56px
+    height: 56px
+    border-radius: 50%
+    background-color: $button-color
+    background-repeat: no-repeat
+    margin-bottom: 25px
+    cursor: pointer
+
+  &__likeicon
+    margin-right: 0
+    width: 24px
+    height: 28px
+
+  &__subinfo
+    display: flex
