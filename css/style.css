@@ -1589,6 +1589,9 @@ template {
   .slider-button-next {
     right: 5%;
   }
+  .all:before {
+    display: none;
+  }
   .all__card--topleft, .all__card--topright {
     height: 400px;
     max-width: 465px;
@@ -1604,6 +1607,28 @@ template {
     margin-top: 5px;
     font-size: 15px;
     line-height: 20px;
+  }
+  .footer-contact-wrapper {
+    padding-top: 100px;
+  }
+  .footer__row {
+    margin-top: 100px;
+  }
+  .footer-bottom {
+    flex-wrap: wrap;
+  }
+  .footer__icon-wrapper {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer__text {
+    flex-direction: row;
+  }
+  .footer-list-wrapper {
+    margin-top: 15px;
+    margin-right: 25px;
+    margin-left: 15px;
   }
 }
 
@@ -1771,6 +1796,39 @@ template {
     font-size: 12px;
     line-height: 15px;
     margin-bottom: 0;
+  }
+  .footer-contact-wrapper {
+    flex-direction: column;
+  }
+  .footer-offers {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+  .footer-offers:after, .footer-offers:before {
+    display: none;
+  }
+  .footer-offers__image {
+    width: 600px;
+  }
+  .footer-offers__title {
+    width: 100%;
+  }
+  .footer-offers__info {
+    margin-left: 30px;
+    width: 100%;
+    flex-direction: row;
+  }
+  .footer__contact-form {
+    width: 100%;
+  }
+  .footer-title {
+    margin-top: 0;
+  }
+  .footer__info {
+    margin-bottom: 30px;
   }
 }
 
