@@ -1,4 +1,21 @@
 .all
+  display: flex
+  position: relative
+  color: #ffffff
+  z-index: 99
+
+  &:before
+    content: ''
+    position: absolute
+    width: 210%
+    top: 0
+    bottom: -170px
+    left: -55%
+    border-radius: 0 0 50% 50%
+    z-index: 99
+    overflow: hidden
+    background-color: #ffffff
+    z-index: -2
 
   &-wrapper
     flex-wrap: wrap

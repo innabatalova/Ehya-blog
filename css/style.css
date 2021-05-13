@@ -1104,6 +1104,27 @@ template {
   top: 60%;
 }
 
+.all {
+  display: flex;
+  position: relative;
+  color: #ffffff;
+  z-index: 99;
+}
+
+.all:before {
+  content: '';
+  position: absolute;
+  width: 210%;
+  top: 0;
+  bottom: -170px;
+  left: -55%;
+  border-radius: 0 0 50% 50%;
+  z-index: 99;
+  overflow: hidden;
+  background-color: #ffffff;
+  z-index: -2;
+}
+
 .all-wrapper {
   flex-wrap: wrap;
 }
@@ -1220,6 +1241,8 @@ template {
   background-color: #1A3245;
   margin-top: 70px;
   padding-bottom: 85px;
+  overflow: hidden;
+  z-index: 5;
 }
 
 .footer-contact-wrapper {
