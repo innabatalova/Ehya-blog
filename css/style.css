@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
 }
@@ -2412,6 +2413,9 @@ template {
   .button-wrapper {
     margin-bottom: 50px;
   }
+  .footer {
+    padding-bottom: 0;
+  }
   .footer-contact-wrapper {
     padding-top: 70px;
   }
@@ -2430,6 +2434,74 @@ template {
   .footer__info {
     font-size: 14px;
     line-height: 27px;
+  }
+  .footer-offers {
+    display: none;
+  }
+  .footer__row {
+    display: none;
+  }
+  .footer__subtitle {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+  .footer__listing {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+  .footer-copy {
+    display: none;
+  }
+  .footer__icon-wrapper {
+    order: 5;
+  }
+  .footer__text {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 28px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .footer__logo {
+    margin-bottom: 16px;
+  }
+  .footer-list-wrapper {
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+  .footer-list-product {
+    margin-right: 44px;
+  }
+  .footer__privacy {
+    visibility: hidden;
+    margin-bottom: -20px;
+  }
+  .footer__privacy:before {
+    content: 'Privacy Policy';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    visibility: visible;
+  }
+  .footer__over {
+    visibility: hidden;
+  }
+  .footer__over:before {
+    content: 'Еще...';
+    font-style: normal;
+    font-weight: normal;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    visibility: visible;
   }
 }
 /*# sourceMappingURL=style.css.map */
