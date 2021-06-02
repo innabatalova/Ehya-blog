@@ -923,7 +923,7 @@ template {
   color: #FFFFFF;
 }
 
-.card__title--left {
+.card__title-left {
   margin-bottom: 73px;
 }
 
@@ -1525,7 +1525,7 @@ template {
     height: 500px;
     width: 65%;
   }
-  .popular__card--left {
+  .popular__card-left {
     margin-right: 8px;
   }
   .recent__card {
@@ -1677,13 +1677,13 @@ template {
     font-size: 15px;
     line-height: 32px;
   }
-  .card__title--popular {
+  .card__title-popular {
     margin-top: 35px;
     margin-bottom: 10px;
     font-size: 20px;
     line-height: 28px;
   }
-  .card__title--left {
+  .card__title-left {
     margin-top: 0;
     margin-bottom: 35px;
   }
@@ -1964,7 +1964,7 @@ template {
     margin-bottom: 16px;
     padding: 20px;
   }
-  .popular__card--left {
+  .popular__card-left {
     margin-right: 0;
     margin-bottom: 16px;
   }
@@ -2316,7 +2316,7 @@ template {
   .card {
     width: 100%;
   }
-  .card__title--left {
+  .card__title-left {
     margin-bottom: 45px;
   }
   .recent__title {
@@ -2527,5 +2527,59 @@ template {
   .footer__company {
     margin-right: 0;
   }
+}
+
+body {
+  background-color: #1A3245;
+}
+
+.search, .offers, .all, .popular, .recent, .studies, .footer {
+  visibility: hidden;
+}
+
+.header-wrapper {
+  background-color: #1A3245;
+}
+
+.header-wrapper:after, .header-wrapper:before {
+  visibility: hidden;
+}
+
+.footer__subtitle:before {
+  visibility: hidden;
+}
+
+.footer__privacy:before {
+  visibility: hidden;
+}
+
+.navigation {
+  width: 90%;
+  position: fixed;
+}
+
+.mobile {
+  position: fixed;
+  visibility: visible;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  top: 100px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.mobile__item {
+  color: #ffffff;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 /*# sourceMappingURL=style.css.map */

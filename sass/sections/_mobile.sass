@@ -1,0 +1,48 @@
+body
+  background-color: $footer-color
+
+.search, .offers, .all, .popular, .recent, .studies, .footer
+  visibility: hidden
+
+.header
+
+  &-wrapper
+    background-color: $footer-color
+    &:after, &:before
+      visibility: hidden
+
+.footer
+
+  &__subtitle
+    &:before
+      visibility: hidden
+  &__privacy
+    &:before
+      visibility: hidden
+
+.navigation
+  width: 90%
+  position: fixed
+
+.mobile
+  position: fixed
+  visibility: visible
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: flex-start
+  top: 100px
+  bottom: 0
+  right: 0
+  left: 0
+
+  &__item
+    color: #ffffff
+    font-family: Open Sans
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 25px
+    text-transform: uppercase
+    margin-bottom: 20px
+    margin-top: 40px
