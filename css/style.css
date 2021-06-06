@@ -2385,7 +2385,7 @@ template {
   .studies__button {
     margin-bottom: 5px;
     margin-top: -5px;
-    left: 23%;
+    left: 18%;
   }
   .studies__info {
     display: block;
@@ -2530,6 +2530,9 @@ template {
 }
 
 @media (max-width: 768px) {
+  .header {
+    z-index: 99;
+  }
   .navigation--mobile_fixed {
     position: fixed;
     top: 0;
@@ -2549,6 +2552,11 @@ template {
   .articles {
     position: static;
   }
+  .articles-button {
+    position: static;
+    z-index: -1;
+    order: 5;
+  }
   .all {
     position: static;
   }
@@ -2567,17 +2575,15 @@ template {
   .popular-wrapper {
     margin-bottom: 40px;
   }
-  .articles-button {
-    position: static;
-    z-index: -1;
-    order: 5;
+  .studies-title {
+    margin-top: 60px;
   }
-  .button-wrapper {
-    display: block;
-    padding-left: 30%;
+  .studies__button {
+    position: absolute;
+    border: 1px solid red;
   }
-  .slider-wrapper {
-    position: static;
+  .slider-button-prev, .slider-button-next {
+    z-index: 97;
   }
 }
 /*# sourceMappingURL=style.css.map */

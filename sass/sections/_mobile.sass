@@ -1,4 +1,6 @@
 @media ( max-width: 768px )
+  .header
+    z-index: 99
 
   .navigation
 
@@ -23,6 +25,11 @@
   .articles
     position: static
 
+    &-button
+      position: static
+      z-index: -1
+      order: 5
+
   .all
     position: static
 
@@ -45,20 +52,18 @@
     &-wrapper
       margin-bottom: 40px
 
-  .articles
+  .studies
 
-    &-button
-      position: static
-      z-index: -1
-      order: 5
+    &-title
+      margin-top: 60px
 
-  .button
-
-    &-wrapper
-      display: block
-      padding-left: 30%
+    &__button
+      position: absolute
+      border: 1px solid red
 
   .slider
 
-    &-wrapper
-      position: static
+    &-button
+
+      &-prev, &-next
+        z-index: 97
