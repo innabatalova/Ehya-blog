@@ -1,48 +1,64 @@
-body
-  background-color: $footer-color
+@media ( max-width: 768px )
 
-.search, .offers, .all, .popular, .recent, .studies, .footer
-  visibility: hidden
+  .navigation
 
-.header
+    &--mobile
 
-  &-wrapper
-    background-color: $footer-color
-    &:after, &:before
-      visibility: hidden
+      &_fixed
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        padding: 0 20px
+        z-index: 99
+        background-color: black
 
-.footer
+  .search
+    padding-top: 100px
 
-  &__subtitle
-    &:before
-      visibility: hidden
-  &__privacy
-    &:before
-      visibility: hidden
-
-.navigation
-  width: 90%
-  position: fixed
-
-.mobile
-  position: fixed
-  visibility: visible
-  display: flex
-  flex-direction: column
-  align-items: center
-  justify-content: flex-start
-  top: 100px
-  bottom: 0
-  right: 0
-  left: 0
-
-  &__item
-    color: #ffffff
-    font-family: Open Sans
-    font-style: normal
-    font-weight: bold
-    font-size: 18px
-    line-height: 25px
-    text-transform: uppercase
-    margin-bottom: 20px
+  .practice
+    position: static
     margin-top: 40px
+
+  .articles
+    position: static
+
+  .all
+    position: static
+
+    &__button
+      display: inline-block
+
+  .footer
+    position: static
+
+    &-contact
+
+      &-wrapper
+        position: static
+
+  .popular
+
+    &__button
+      margin-bottom: 25px
+
+    &-wrapper
+      margin-bottom: 40px
+
+  .articles
+
+    &-button
+      position: static
+      z-index: -1
+      order: 5
+
+  .button
+
+    &-wrapper
+      display: block
+      padding-left: 30%
+
+  .slider
+
+    &-wrapper
+      position: static

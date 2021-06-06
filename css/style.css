@@ -2529,57 +2529,55 @@ template {
   }
 }
 
-body {
-  background-color: #1A3245;
-}
-
-.search, .offers, .all, .popular, .recent, .studies, .footer {
-  visibility: hidden;
-}
-
-.header-wrapper {
-  background-color: #1A3245;
-}
-
-.header-wrapper:after, .header-wrapper:before {
-  visibility: hidden;
-}
-
-.footer__subtitle:before {
-  visibility: hidden;
-}
-
-.footer__privacy:before {
-  visibility: hidden;
-}
-
-.navigation {
-  width: 90%;
-  position: fixed;
-}
-
-.mobile {
-  position: fixed;
-  visibility: visible;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  top: 100px;
-  bottom: 0;
-  right: 0;
-  left: 0;
-}
-
-.mobile__item {
-  color: #ffffff;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 25px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  margin-top: 40px;
+@media (max-width: 768px) {
+  .navigation--mobile_fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 20px;
+    z-index: 99;
+    background-color: black;
+  }
+  .search {
+    padding-top: 100px;
+  }
+  .practice {
+    position: static;
+    margin-top: 40px;
+  }
+  .articles {
+    position: static;
+  }
+  .all {
+    position: static;
+  }
+  .all__button {
+    display: inline-block;
+  }
+  .footer {
+    position: static;
+  }
+  .footer-contact-wrapper {
+    position: static;
+  }
+  .popular__button {
+    margin-bottom: 25px;
+  }
+  .popular-wrapper {
+    margin-bottom: 40px;
+  }
+  .articles-button {
+    position: static;
+    z-index: -1;
+    order: 5;
+  }
+  .button-wrapper {
+    display: block;
+    padding-left: 30%;
+  }
+  .slider-wrapper {
+    position: static;
+  }
 }
 /*# sourceMappingURL=style.css.map */
