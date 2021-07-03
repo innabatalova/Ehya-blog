@@ -4,16 +4,17 @@
 
   .navigation
 
-    &--mobile
+    &__mobile
 
       &_fixed
         position: fixed
+        height: 70px
         top: 0
         left: 0
         right: 0
         padding: 0 20px
         z-index: 99
-        background-color: black
+        background-color: $footer-color
 
   .search
     padding-top: 100px
@@ -67,3 +68,46 @@
 
       &-prev, &-next
         z-index: 97
+
+  .navbar
+
+    &__mobile
+      position: fixed
+      display: flex
+      flex-direction: column
+      align-items: center
+      background-color: $footer-color
+      z-index: 99
+      height: 100%
+      left: 0
+      top: 50px
+      right: -25px
+
+    &__link
+      font-weight: 600
+      font-size: 20px
+      line-height: 30px
+      margin-bottom: 20px
+      margin-left: 0
+
+    &__linker
+      display: none
+
+    &__item
+      font-weight: 600
+      font-size: 20px
+      line-height: 30px
+      margin-top: 40px
+      margin-bottom: 20px
+
+  .container
+
+    &-select
+      margin-top: 0
+      height: 100%
+      padding-left: 0
+
+  .icon
+
+    &-arrow
+      display: none
