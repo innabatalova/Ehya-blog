@@ -34,5 +34,7 @@ menuButton.on("click", function(){
    $(".navbar__link").toggleClass("navbar__link_mobile")
    $(".navbar__linker").toggleClass("navbar__linker_mobile")
    $(".navbar__item").toggleClass("navbar__item_mobile")
+   $(".navigation-fixed").toggleClass("navigation-color")
+  
 
 });
