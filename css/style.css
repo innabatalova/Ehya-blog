@@ -2598,29 +2598,29 @@ template {
     top: 50px;
     right: -25px;
   }
-  .navbar__link {
+  .navbar__link_mobile {
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 20px;
     margin-left: 0;
   }
-  .navbar__linker {
+  .navbar__linker_mobile {
     display: none;
   }
-  .navbar__item {
+  .navbar__item_mobile {
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
     margin-top: 40px;
     margin-bottom: 20px;
   }
-  .container-select {
+  .container-select__mobile {
     margin-top: 0;
     height: 100%;
     padding-left: 0;
   }
-  .icon-arrow {
+  .icon-arrow__mobile {
     display: none;
   }
 }
